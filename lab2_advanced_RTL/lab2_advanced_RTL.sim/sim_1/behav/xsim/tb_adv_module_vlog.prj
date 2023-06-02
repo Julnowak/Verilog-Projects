@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../lab2_advanced_RTL.srcs/sources_1/new/adv_module.v" \
+"../../../../lab2_advanced_RTL.srcs/sources_1/new/and_gate.v" \
+"../../../../lab2_advanced_RTL.srcs/sources_1/new/and_or_gate.v" \
+"../../../../lab2_advanced_RTL.srcs/sources_1/new/or_gate.v" \
+"../../../../lab2_advanced_RTL.srcs/sources_1/new/stimulate.v" \
+"../../../../lab2_advanced_RTL.srcs/sources_1/new/tb_adv_module.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

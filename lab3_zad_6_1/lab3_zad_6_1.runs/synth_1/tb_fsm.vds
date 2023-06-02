@@ -1,0 +1,331 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Mar 16 12:12:03 2023
+# Process ID: 28932
+# Current directory: C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.runs/synth_1
+# Command line: vivado.exe -log tb_fsm.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source tb_fsm.tcl
+# Log file: C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.runs/synth_1/tb_fsm.vds
+# Journal file: C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.runs/synth_1\vivado.jou
+# Running On: LAPTOP-73BI56TU, OS: Windows, CPU Frequency: 2895 MHz, CPU Physical cores: 16, Host memory: 16559 MB
+#-----------------------------------------------------------
+source tb_fsm.tcl -notrace
+Command: synth_design -top tb_fsm -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 6080
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 944.160 ; gain = 411.895
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'tb_fsm' [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/tb_fsm.v:23]
+WARNING: [Synth 8-6896] loop limit (65536) exceeded inside initial block, initial block items will be ignored [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/tb_fsm.v:34]
+INFO: [Synth 8-6157] synthesizing module 'load_data' [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:23]
+WARNING: [Synth 8-639] system function call 'fopen' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:35]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:41]
+INFO: [Common 17-14] Message 'Synth 8-639' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+INFO: [Synth 8-251] 8'b00000000 [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:42]
+INFO: [Common 17-14] Message 'Synth 8-251' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'load_data' (0#1) [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/load_data.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fsm' [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/fsm.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'fsm' (0#1) [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/fsm.v:23]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/tb_fsm.v:57]
+INFO: [Synth 8-6157] synthesizing module 'save_data_to_file' [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/save_data_to_file.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'save_data_to_file' (0#1) [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/save_data_to_file.v:23]
+WARNING: [Synth 8-689] width (8) of port connection 'idata' does not match port width (1) of module 'save_data_to_file' [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/tb_fsm.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'tb_fsm' (0#1) [C:/Users/Julia/Desktop/SR/Projekty/lab3_zad_6_1/lab3_zad_6_1.srcs/sources_1/new/tb_fsm.v:23]
+WARNING: [Synth 8-7129] Port idata in module save_data_to_file is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1076.375 ; gain = 544.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1076.375 ; gain = 544.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1076.375 ; gain = 544.109
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  STATE0 |                             0001 |                               00
+                  STATE1 |                             0010 |                               01
+                  STATE2 |                             0100 |                               10
+                  STATE3 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'fsm'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1076.375 ; gain = 544.109
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    4 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input    4 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (a/FSM_onehot_state_reg[3]) is unused and will be removed from module tb_fsm.
+WARNING: [Synth 8-3332] Sequential element (a/FSM_onehot_state_reg[2]) is unused and will be removed from module tb_fsm.
+WARNING: [Synth 8-3332] Sequential element (a/FSM_onehot_state_reg[1]) is unused and will be removed from module tb_fsm.
+WARNING: [Synth 8-3332] Sequential element (a/FSM_onehot_state_reg[0]) is unused and will be removed from module tb_fsm.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1222.801 ; gain = 690.535
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1222.801 ; gain = 690.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1222.801 ; gain = 690.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
