@@ -1,0 +1,8 @@
+movi R3, 0x34
+mov R2, R3
+and R1, R2, R3
+andi R4, R2, 0x03
+add R1, R2, R3
+addi R4, R2, 0x03
+jz R6, 1
+nop

@@ -1,0 +1,23 @@
+movi R0, 0xcd
+movi R4, 1
+addi R0, R0, 1
+jnz R0, 2
+movi R4, 2
+andi R0, R5, 1
+andi R1, R5, 1
+add R2, R0, R1
+andi R2, R2, 1
+jz R2, 6
+movi R0, 0xcd
+movi R4, 8
+addi R0, R0, 1
+jnz R0, 12
+movi R4, 16
+andi R0, R5, 2
+movi R1, 0
+andi R1, R5, 2
+add R2, R0, R1
+andi R2, R2, 2
+jz R2, 17
+jumpi 0
+

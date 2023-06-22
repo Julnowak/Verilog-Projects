@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../project_2/project_2.srcs/sources_1/new/delay_line.v" \
+"../../../../lab4_4_matrix.srcs/sources_1/new/matrix.v" \
+"../../../../../project_2/project_2.srcs/sources_1/new/single_register.v" \
+"../../../../lab4_4_matrix.srcs/sources_1/new/stimulate.v" \
+"../../../../lab4_4_matrix.srcs/sources_1/new/tb_matrix.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

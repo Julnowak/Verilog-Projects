@@ -1,0 +1,65 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Wed May 24 19:03:02 2023
+# Process ID: 23156
+# Current directory: C:/Users/Julia/Desktop/hdmi_vga_zybo2/median5x5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10904 C:\Users\Julia\Desktop\hdmi_vga_zybo2\median5x5\median5x5.xpr
+# Log file: C:/Users/Julia/Desktop/hdmi_vga_zybo2/median5x5/vivado.log
+# Journal file: C:/Users/Julia/Desktop/hdmi_vga_zybo2/median5x5\vivado.jou
+# Running On: LAPTOP-73BI56TU, OS: Windows, CPU Frequency: 2895 MHz, CPU Physical cores: 16, Host memory: 16559 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Julia/Desktop/hdmi_vga_zybo2/median5x5/median5x5.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+ipx::open_ipxact_file C:/Users/Julia/Desktop/SR/filtr_ip/component.xml
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+set_property core_revision 3 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/Users/Julia/Desktop/SR/filtr_ip
+ipx::package_project -root_dir C:/Users/Julia/Desktop/SR/filtr_ip -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false -force
+ipx::unload_core c:/Users/Julia/Desktop/SR/filtr_ip/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Users/Julia/Desktop/SR/filtr_ip c:/Users/Julia/Desktop/SR/filtr_ip/component.xml
+update_compile_order -fileset sources_1
+set_property core_revision 2 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/Julia/Desktop/SR/filtr_ip
+ipx::open_ipxact_file c:/Users/Julia/Desktop/SR/filtr_ip/component.xml
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+set_property core_revision 3 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/Users/Julia/Desktop/SR/filtr_ip
+set_property core_revision 4 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/Users/Julia/Desktop/SR/filtr_ip
+ipx::package_project -root_dir C:/Users/Julia/Desktop/SR/filtr_ip -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false -force
+ipx::unload_core c:/Users/Julia/Desktop/SR/filtr_ip/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Users/Julia/Desktop/SR/filtr_ip c:/Users/Julia/Desktop/SR/filtr_ip/component.xml
+update_compile_order -fileset sources_1
+set_property core_revision 2 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/Julia/Desktop/SR/filtr_ip

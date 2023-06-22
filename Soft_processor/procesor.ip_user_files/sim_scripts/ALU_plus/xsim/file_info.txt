@@ -1,0 +1,1 @@
+ALU_plus.vhd,vhdl,xil_defaultlib,../../../../procesor.gen/sources_1/ip/ALU_plus/sim/ALU_plus.vhd,

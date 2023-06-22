@@ -1,0 +1,7 @@
+movi R4, 1
+movi R0, 0
+addi R0, R0, 1
+andi R2, R0, 0xff
+jz R2, 3
+
+movi R4, 2

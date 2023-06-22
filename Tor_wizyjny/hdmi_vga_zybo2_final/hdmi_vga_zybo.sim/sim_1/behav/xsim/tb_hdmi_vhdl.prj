@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../hdmi_vga_zybo.gen/sources_1/ip/divider_32_20_0_1/src/mult_32_20_lm/sim/mult_32_20_lm.vhd" \
+"../../../../hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0/src/c_addsub_0/sim/c_addsub_0.vhd" \
+"../../../../hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0/src/mult_gen_0/sim/mult_gen_0.vhd" \
+
+# Do not sort compile order
+nosort

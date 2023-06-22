@@ -1,0 +1,232 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Jun  1 03:30:25 2023
+# Process ID: 8712
+# Current directory: C:/Users/Julia/Desktop/hdmi_vga_zybo2/hdmi_vga_zybo.runs/thresh_0_synth_1
+# Command line: vivado.exe -log thresh_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source thresh_0.tcl
+# Log file: C:/Users/Julia/Desktop/hdmi_vga_zybo2/hdmi_vga_zybo.runs/thresh_0_synth_1/thresh_0.vds
+# Journal file: C:/Users/Julia/Desktop/hdmi_vga_zybo2/hdmi_vga_zybo.runs/thresh_0_synth_1\vivado.jou
+# Running On: LAPTOP-73BI56TU, OS: Windows, CPU Frequency: 2895 MHz, CPU Physical cores: 16, Host memory: 16559 MB
+#-----------------------------------------------------------
+source thresh_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Julia/Desktop/SR/ip_core'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Julia/Desktop/SR/vivado-library'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Julia/Desktop/hdmi_vga_zybo2/divider_32_20_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Julia/Desktop/SR/Projekty/accum'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Julia/Desktop/SR/threshold_ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Julia/Desktop/SR/filtr_ip'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/Julia/Desktop/cenip'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: thresh_0
+Command: synth_design -top thresh_0 -part xc7z010clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 764
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1331.328 ; gain = 406.176
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'thresh_0' [c:/Users/Julia/Desktop/hdmi_vga_zybo2/hdmi_vga_zybo.gen/sources_1/ip/thresh_0_2/synth/thresh_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'thresh' [c:/Users/Julia/Desktop/hdmi_vga_zybo2/hdmi_vga_zybo.gen/sources_1/ip/thresh_0_2/src/thresh.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'thresh' (0#1) [c:/Users/Julia/Desktop/hdmi_vga_zybo2/hdmi_vga_zybo.gen/sources_1/ip/thresh_0_2/src/thresh.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'thresh_0' (0#1) [c:/Users/Julia/Desktop/hdmi_vga_zybo2/hdmi_vga_zybo.gen/sources_1/ip/thresh_0_2/synth/thresh_0.v:53]
+WARNING: [Synth 8-7129] Port pixel_in[23] in module thresh is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_in[22] in module thresh is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_in[21] in module thresh is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_in[20] in module thresh is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_in[19] in module thresh is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_in[18] in module thresh is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_in[17] in module thresh is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_in[16] in module thresh is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1424.094 ; gain = 498.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1424.094 ; gain = 498.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1424.094 ; gain = 498.941
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1424.094 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1424.094 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1424.094 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1424.094 ; gain = 498.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1424.094 ; gain = 498.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1424.094 ; gain = 498.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1424.094 ; gain = 498.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port pixel_in[23] in module thresh_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_in[22] in module thresh_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_in[21] in module thresh_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_in[20] in module thresh_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_in[19] in module thresh_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_in[18] in module thresh_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_in[17] in module thresh_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_in[16] in module thresh_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1424.094 ; gain = 498.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1424.094 ; gain = 498.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1424.094 ; gain = 498.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1434.707 ; gain = 509.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1440.484 ; gain = 515.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1440.484 ; gain = 515.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1440.484 ; gain = 515.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1440.484 ; gain = 515.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1440.484 ; gain = 515.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1440.484 ; gain = 515.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT2 |     1|
+|2     |LUT5 |     2|
+|3     |LUT6 |     3|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1440.484 ; gain = 515.332
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 9 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:30 . Memory (MB): peak = 1440.484 ; gain = 515.332
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1440.484 ; gain = 515.332
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1452.516 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1463.059 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 124e6a95
+INFO: [Common 17-83] Releasing license: Synthesis
+28 Infos, 18 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1463.059 ; gain = 915.199
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Julia/Desktop/hdmi_vga_zybo2/hdmi_vga_zybo.runs/thresh_0_synth_1/thresh_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP thresh_0, cache-ID = e7da58b577e6f1db
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Julia/Desktop/hdmi_vga_zybo2/hdmi_vga_zybo.runs/thresh_0_synth_1/thresh_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file thresh_0_utilization_synth.rpt -pb thresh_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jun  1 03:31:14 2023...

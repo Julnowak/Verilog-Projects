@@ -1,0 +1,11 @@
+verilog xil_defaultlib  \
+"../../../../hdmi_vga_zybo.gen/sources_1/ip/median5x5_0_1/src/delayLineBRAM/sim/delayLineBRAM.v" \
+"../../../../hdmi_vga_zybo.gen/sources_1/ip/median5x5_0_1/src/delayLineBRAM_WP.v" \
+"../../../../hdmi_vga_zybo.gen/sources_1/ip/median5x5_0_1/src/delay_line.v" \
+"../../../../hdmi_vga_zybo.gen/sources_1/ip/median5x5_0_1/src/single_register.v" \
+"../../../../hdmi_vga_zybo.gen/sources_1/ip/median5x5_0_1/src/median5x5.v" \
+"../../../../hdmi_vga_zybo.gen/sources_1/ip/median5x5_0_1/sim/median5x5_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

@@ -1,0 +1,8 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Julia/Desktop/SR/Projekty/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/divider_32_20_0/src/mult_32_20_lm/sim/mult_32_20_lm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mult_32_20_lm'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Julia/Desktop/SR/Projekty/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/adder_centroid/sim/adder_centroid.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'adder_centroid'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Julia/Desktop/SR/Projekty/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_5/src/c_addsub_0/sim/c_addsub_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'c_addsub_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Julia/Desktop/SR/Projekty/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_5/src/mult_gen_0/sim/mult_gen_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mult_gen_0'

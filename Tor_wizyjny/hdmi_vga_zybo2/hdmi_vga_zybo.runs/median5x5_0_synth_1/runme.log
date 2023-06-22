@@ -1,0 +1,448 @@
+
+*** Running vivado
+    with args -log median5x5_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source median5x5_0.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source median5x5_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Julia/Desktop/SR/ip_core'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Julia/Desktop/SR/vivado-library'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Julia/Desktop/hdmi_vga_zybo2/divider_32_20_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Julia/Desktop/SR/Projekty/accum'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Julia/Desktop/SR/threshold_ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Julia/Desktop/SR/filtr_ip'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/Julia/Desktop/cenip'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: median5x5_0
+Command: synth_design -top median5x5_0 -part xc7z010clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 23276
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1333.000 ; gain = 408.297
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'median5x5_0' [c:/Users/Julia/Desktop/hdmi_vga_zybo2/hdmi_vga_zybo.gen/sources_1/ip/median5x5_0_3/synth/median5x5_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'median5x5' [c:/Users/Julia/Desktop/hdmi_vga_zybo2/hdmi_vga_zybo.gen/sources_1/ip/median5x5_0_3/src/median5x5.v:23]
+INFO: [Synth 8-6157] synthesizing module 'delayLinieBRAM_WP' [c:/Users/Julia/Desktop/hdmi_vga_zybo2/hdmi_vga_zybo.gen/sources_1/ip/median5x5_0_3/src/delayLineBRAM_WP.v:21]
+INFO: [Synth 8-638] synthesizing module 'delayLineBRAM' [c:/Users/Julia/Desktop/hdmi_vga_zybo2/hdmi_vga_zybo.gen/sources_1/ip/median5x5_0_3/src/delayLineBRAM/synth/delayLineBRAM.vhd:69]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 0 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: no_coe_file_loaded - type: string 
+	Parameter C_INIT_FILE bound to: delayLineBRAM.mem - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: READ_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 17 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 17 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 2048 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 2048 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 11 - type: integer 
+	Parameter C_HAS_RSTB bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 17 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 17 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 2048 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 2048 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 11 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_READ_LATENCY_A bound to: 1 - type: integer 
+	Parameter C_READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 1 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 0 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     2.862 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_5' declared at 'c:/Users/Julia/Desktop/hdmi_vga_zybo2/hdmi_vga_zybo.gen/sources_1/ip/median5x5_0_3/src/delayLineBRAM/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195321' bound to instance 'U0' of component 'blk_mem_gen_v8_4_5' [c:/Users/Julia/Desktop/hdmi_vga_zybo2/hdmi_vga_zybo.gen/sources_1/ip/median5x5_0_3/src/delayLineBRAM/synth/delayLineBRAM.vhd:234]
+INFO: [Synth 8-256] done synthesizing module 'delayLineBRAM' (0#1) [c:/Users/Julia/Desktop/hdmi_vga_zybo2/hdmi_vga_zybo.gen/sources_1/ip/median5x5_0_3/src/delayLineBRAM/synth/delayLineBRAM.vhd:69]
+WARNING: [Synth 8-689] width (13) of port connection 'addra' does not match port width (11) of module 'delayLineBRAM' [c:/Users/Julia/Desktop/hdmi_vga_zybo2/hdmi_vga_zybo.gen/sources_1/ip/median5x5_0_3/src/delayLineBRAM_WP.v:69]
+WARNING: [Synth 8-689] width (16) of port connection 'douta' does not match port width (17) of module 'delayLineBRAM' [c:/Users/Julia/Desktop/hdmi_vga_zybo2/hdmi_vga_zybo.gen/sources_1/ip/median5x5_0_3/src/delayLineBRAM_WP.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'delayLinieBRAM_WP' (0#1) [c:/Users/Julia/Desktop/hdmi_vga_zybo2/hdmi_vga_zybo.gen/sources_1/ip/median5x5_0_3/src/delayLineBRAM_WP.v:21]
+INFO: [Synth 8-6157] synthesizing module 'delay_line' [c:/Users/Julia/Desktop/hdmi_vga_zybo2/hdmi_vga_zybo.gen/sources_1/ip/median5x5_0_3/src/delay_line.v:23]
+INFO: [Synth 8-6157] synthesizing module 'single_register' [c:/Users/Julia/Desktop/hdmi_vga_zybo2/hdmi_vga_zybo.gen/sources_1/ip/median5x5_0_3/src/single_register.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'single_register' (0#1) [c:/Users/Julia/Desktop/hdmi_vga_zybo2/hdmi_vga_zybo.gen/sources_1/ip/median5x5_0_3/src/single_register.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'delay_line' (0#1) [c:/Users/Julia/Desktop/hdmi_vga_zybo2/hdmi_vga_zybo.gen/sources_1/ip/median5x5_0_3/src/delay_line.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'median5x5' (0#1) [c:/Users/Julia/Desktop/hdmi_vga_zybo2/hdmi_vga_zybo.gen/sources_1/ip/median5x5_0_3/src/median5x5.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'median5x5_0' (0#1) [c:/Users/Julia/Desktop/hdmi_vga_zybo2/hdmi_vga_zybo.gen/sources_1/ip/median5x5_0_3/synth/median5x5_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element s1_reg was removed.  [c:/Users/Julia/Desktop/hdmi_vga_zybo2/hdmi_vga_zybo.gen/sources_1/ip/median5x5_0_3/src/median5x5.v:82]
+WARNING: [Synth 8-6014] Unused sequential element s2_reg was removed.  [c:/Users/Julia/Desktop/hdmi_vga_zybo2/hdmi_vga_zybo.gen/sources_1/ip/median5x5_0_3/src/median5x5.v:83]
+WARNING: [Synth 8-6014] Unused sequential element s3_reg was removed.  [c:/Users/Julia/Desktop/hdmi_vga_zybo2/hdmi_vga_zybo.gen/sources_1/ip/median5x5_0_3/src/median5x5.v:84]
+WARNING: [Synth 8-6014] Unused sequential element s4_reg was removed.  [c:/Users/Julia/Desktop/hdmi_vga_zybo2/hdmi_vga_zybo.gen/sources_1/ip/median5x5_0_3/src/median5x5.v:85]
+WARNING: [Synth 8-6014] Unused sequential element s5_reg was removed.  [c:/Users/Julia/Desktop/hdmi_vga_zybo2/hdmi_vga_zybo.gen/sources_1/ip/median5x5_0_3/src/median5x5.v:86]
+WARNING: [Synth 8-7129] Port CLKB in module blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB_I[16] in module blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB_I[15] in module blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB_I[14] in module blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB_I[13] in module blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB_I[12] in module blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB_I[11] in module blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB_I[10] in module blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB_I[9] in module blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB_I[8] in module blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB_I[7] in module blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB_I[6] in module blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB_I[5] in module blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB_I[4] in module blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB_I[3] in module blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB_I[2] in module blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB_I[1] in module blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB_I[0] in module blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SBITERR_I in module blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DBITERR_I in module blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[10] in module blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[9] in module blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[8] in module blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[7] in module blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[6] in module blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[5] in module blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[4] in module blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[3] in module blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[2] in module blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[1] in module blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[0] in module blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB[17] in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB[16] in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB[15] in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB[14] in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB[13] in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB[12] in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB[11] in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB[10] in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB[9] in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB[8] in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB[7] in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB[6] in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB[5] in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB[4] in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB[3] in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB[2] in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB[1] in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTB[0] in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SBITERR in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DBITERR in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSRA in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLKB in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSRB in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENB in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port REGCEB in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WEB[0] in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDRB[10] in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDRB[9] in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDRB[8] in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDRB[7] in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDRB[6] in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDRB[5] in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDRB[4] in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDRB[3] in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDRB[2] in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDRB[1] in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDRB[0] in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[17] in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[16] in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[15] in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[14] in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[13] in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[12] in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[11] in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[10] in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[9] in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[8] in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[7] in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[6] in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[5] in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[4] in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[3] in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[2] in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[1] in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[0] in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SLEEP in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INJECTSBITERR in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INJECTDBITERR in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ECCPIPECE in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_rstram_b in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_rstreg_b in module blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RSTA[0] in module blk_mem_gen_generic_cstr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WEA[1] in module blk_mem_gen_generic_cstr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port REGCEB[0] in module blk_mem_gen_generic_cstr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WEB[1] in module blk_mem_gen_generic_cstr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INJECTSBITERR in module blk_mem_gen_generic_cstr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INJECTDBITERR in module blk_mem_gen_generic_cstr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RSTA in module blk_mem_input_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENA in module blk_mem_input_block is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1658.234 ; gain = 733.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1658.234 ; gain = 733.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1658.234 ; gain = 733.531
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1658.234 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Julia/Desktop/hdmi_vga_zybo2/hdmi_vga_zybo.runs/median5x5_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Julia/Desktop/hdmi_vga_zybo2/hdmi_vga_zybo.runs/median5x5_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1658.234 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1658.234 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1658.234 ; gain = 733.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1658.234 ; gain = 733.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst/long_line/BRAM. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1658.234 ; gain = 733.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1658.234 ; gain = 733.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   5 Input    5 Bit       Adders := 1     
+	   5 Input    3 Bit       Adders := 5     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 26    
++---Muxes : 
+	   2 Input   24 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1658.234 ; gain = 733.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1658.234 ; gain = 733.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1658.234 ; gain = 733.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1658.234 ; gain = 733.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 1658.234 ; gain = 733.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 1658.234 ; gain = 733.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 1658.234 ; gain = 733.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 1658.234 ; gain = 733.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 1658.234 ; gain = 733.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 1658.234 ; gain = 733.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+-----------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name        | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+-----------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|median5x5_0 | inst/D45_reg[1] | 5      | 2     | NO           | YES                | YES               | 2      | 0       | 
+|median5x5_0 | inst/D25_reg[1] | 5      | 2     | NO           | YES                | YES               | 2      | 0       | 
+|median5x5_0 | inst/D15_reg[1] | 5      | 2     | NO           | YES                | YES               | 2      | 0       | 
++------------+-----------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |     6|
+|2     |LUT1     |     2|
+|3     |LUT2     |     1|
+|4     |LUT3     |     7|
+|5     |LUT4     |     2|
+|6     |LUT5     |    19|
+|7     |LUT6     |    11|
+|8     |RAMB36E1 |     1|
+|9     |SRL16E   |     6|
+|10    |FDRE     |    94|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 1658.234 ; gain = 733.531
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 192 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:46 . Memory (MB): peak = 1658.234 ; gain = 733.531
+Synthesis Optimization Complete : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 1658.234 ; gain = 733.531
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1658.234 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1658.234 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: f1d220f1
+INFO: [Common 17-83] Releasing license: Synthesis
+42 Infos, 109 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:51 ; elapsed = 00:00:54 . Memory (MB): peak = 1658.234 ; gain = 1110.051
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Julia/Desktop/hdmi_vga_zybo2/hdmi_vga_zybo.runs/median5x5_0_synth_1/median5x5_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP median5x5_0, cache-ID = 181f4595a90838e9
+INFO: [Coretcl 2-1174] Renamed 11 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Julia/Desktop/hdmi_vga_zybo2/hdmi_vga_zybo.runs/median5x5_0_synth_1/median5x5_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file median5x5_0_utilization_synth.rpt -pb median5x5_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jun  1 11:37:16 2023...

@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../lab4_2.srcs/sources_1/new/adv_arithmetic.v" \
+"../../../../../project_2/project_2.srcs/sources_1/new/delay_line.v" \
+"../../../../../project_2/project_2.srcs/sources_1/new/single_register.v" \
+"../../../../lab4_2.srcs/sources_1/new/stimulate.v" \
+"../../../../lab4_2.srcs/sources_1/new/verify.v" \
+"../../../../lab4_2.srcs/sources_1/new/tb_adv_arithmetic.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

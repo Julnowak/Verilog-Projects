@@ -1,0 +1,2 @@
+suma_ak.vhd,vhdl,xil_defaultlib,../../../../hdmi_vga_zybo.gen/sources_1/ip/suma_ak/sim/suma_ak.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

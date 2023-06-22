@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../hdmi_vga_zybo.gen/sources_1/ip/adder_centroid/sim/adder_centroid.vhd" \
+
+nosort

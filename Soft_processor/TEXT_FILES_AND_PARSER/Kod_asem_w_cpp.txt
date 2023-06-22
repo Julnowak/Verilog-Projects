@@ -1,0 +1,21 @@
+/*
+Program inkrementuje R0 aż do pokrycia z R1
+Wtedy R2 = 0
+Następnie ustawia 1 na R3.
+*/
+
+int main()
+{
+    int R0 = 0; // 0000 0000
+    int R1 = 4; // 0000 0100
+    int R2;
+    int R3;
+    
+    do
+    {
+        R0 = R0 + 1;
+        R2 = (R0 && R1);
+    }
+    while (R2 == 0)
+    R3 = 1;
+}

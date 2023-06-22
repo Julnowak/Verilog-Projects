@@ -1,0 +1,2996 @@
+-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+-- --------------------------------------------------------------------------------
+-- Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+-- Date        : Thu Jun  1 11:37:16 2023
+-- Host        : LAPTOP-73BI56TU running 64-bit major release  (build 9200)
+-- Command     : write_vhdl -force -mode funcsim
+--               c:/Users/Julia/Desktop/hdmi_vga_zybo2/hdmi_vga_zybo.gen/sources_1/ip/median5x5_0_3/median5x5_0_sim_netlist.vhdl
+-- Design      : median5x5_0
+-- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
+--               synthesized. This netlist cannot be used for SDF annotated simulation.
+-- Device      : xc7z010clg400-1
+-- --------------------------------------------------------------------------------
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+library UNISIM;
+use UNISIM.VCOMPONENTS.ALL;
+entity median5x5_0_single_register is
+  port (
+    pixel_out : out STD_LOGIC_VECTOR ( 0 to 0 );
+    \val_reg[2]_0\ : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    Q : in STD_LOGIC_VECTOR ( 4 downto 0 );
+    D : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    clk : in STD_LOGIC
+  );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of median5x5_0_single_register : entity is "single_register";
+end median5x5_0_single_register;
+
+architecture STRUCTURE of median5x5_0_single_register is
+  signal \val_reg_n_0_[3]\ : STD_LOGIC;
+begin
+\pixel_out[0]_INST_0\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"AAAAAAAA88800000"
+    )
+        port map (
+      I0 => \val_reg_n_0_[3]\,
+      I1 => Q(2),
+      I2 => Q(1),
+      I3 => Q(0),
+      I4 => Q(3),
+      I5 => Q(4),
+      O => pixel_out(0)
+    );
+\val_reg[0]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => clk,
+      CE => '1',
+      D => D(0),
+      Q => \val_reg[2]_0\(0),
+      R => '0'
+    );
+\val_reg[1]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => clk,
+      CE => '1',
+      D => D(1),
+      Q => \val_reg[2]_0\(1),
+      R => '0'
+    );
+\val_reg[2]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => clk,
+      CE => '1',
+      D => D(2),
+      Q => \val_reg[2]_0\(2),
+      R => '0'
+    );
+\val_reg[3]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => clk,
+      CE => '1',
+      D => D(3),
+      Q => \val_reg_n_0_[3]\,
+      R => '0'
+    );
+end STRUCTURE;
+`protect begin_protected
+`protect version = 1
+`protect encrypt_agent = "XILINX"
+`protect encrypt_agent_info = "Xilinx Encryption Tool 2022.2"
+`protect key_keyowner="Synopsys", key_keyname="SNPS-VCS-RSA-2", key_method="rsa"
+`protect encoding = (enctype="BASE64", line_length=76, bytes=128)
+`protect key_block
+VHPlDkoDlWlBfBMvPBmGYmaek3s9hXXhjF28kllYPnaNm3TSnzzpXHWHc8Ye9/2L2yiQfJ1hTWou
+Ia/zeQ8h9/dtr6QB5YkyW4wlb/LbMgXb+DGIXPSllNl0IMsRQIcQDbcQm1bO/nlhb+2pjxiuaQrl
+DbvxoDwPs7z3LunRxsg=
+
+`protect key_keyowner="Aldec", key_keyname="ALDEC15_001", key_method="rsa"
+`protect encoding = (enctype="BASE64", line_length=76, bytes=256)
+`protect key_block
+lmIhoX8hXuc7tNV1sXY1K2/gXL7Y7Hq73qQF7+x03UWWTRd3uhGmVQtOMVbhIW+66UkWUHiD26zL
+fzqGor8bgSNGpSFyS11k4TwLQT4OfAMGO8C9Qmmh4+VENBnpS9TW+wHzCv8oUwht7xYtYRZvOvYK
+F3fMppz2sBkUd1lciw98ZE/UmNkhqBuMfIYF43j45DEJ55PBhOZNg91Ls4v3qBHyBAaYPFFoMry3
+d5Fw1PZyFQSEOSSpwgyds2aN0g6oIwl7zm0LJrM9VDAOxBUE50hk+oHr4jj8J8UhHQJnlEHm1Idm
+rvxKygNKRvfSpa90NYxZJFYgqnrMYg+19+9aZA==
+
+`protect key_keyowner="Mentor Graphics Corporation", key_keyname="MGC-VELOCE-RSA", key_method="rsa"
+`protect encoding = (enctype="BASE64", line_length=76, bytes=128)
+`protect key_block
+VkyCjO2onoeZWEoYQ/4ue7X5mkHyTYVW9xjdoTsGS4GdP/Q64VaCZL/jr6R8DVDXPMnH7tRMrDpo
+jpYBnyzSgOkfgqM+96ioC2fDyAaG4gYgGLmrBR6qK3/mxXwAZZX+GJ9R/eWXkc9h8xN+gsSSX6/M
+jIQCgeT6q7PB4dWT6KY=
+
+`protect key_keyowner="Mentor Graphics Corporation", key_keyname="MGC-VERIF-SIM-RSA-2", key_method="rsa"
+`protect encoding = (enctype="BASE64", line_length=76, bytes=256)
+`protect key_block
+Iub91V+TnhVlZCSLu6iKmFjix71y6/l83OPTs8uewWvkE7WcqYxEKi9fonXEkzAtWzuKwEUqnOlN
+VBsNJqPUdKcd22q523mrdt89mpdosWD+hvZdO7ELhJniY5u9h49FFkubpN2JiUTcIcKEYxVNlds4
+wyvaYUqbPVH5v2ooJwDdimS4GVn9HerCOgPwfshvQDNlMTxLcYju4v8BHMc5Rub9Q/ihvpQU74v2
+ouZ9XIwA+C6pBLwvaqS8jE7HXOokgqJilaX/W/t+KEgiFry/txRTMU9WMD7tCN7lcfjCydmS3Lq+
+3u6Hsr0S8BwNjcaDpZDnBTygUJd4JSqREnk33w==
+
+`protect key_keyowner="Real Intent", key_keyname="RI-RSA-KEY-1", key_method="rsa"
+`protect encoding = (enctype="BASE64", line_length=76, bytes=256)
+`protect key_block
+U46EWFmKmpZGaWfyL+dokyQtJtaOYsa7HCW/+fdtw9/yHKTWFpmqKBZngBj5rPkNhtTDDCJkqsYj
+tUXg1j4tgIBaCQn9B0q/aG+B3gPLrudp9hLL25mVbsfiTzdekiV2hJMmhuMoavKKPJHC6zyW7kZi
+80er82OQy8h+Df/fe6TRjH9xEt3/b80tRKUMbxkLfnnkAyyf1KfOhB6/uyI4mwXuQR+DsAbzybKR
+YtXpOiW72tGrXTFlzcwbHamWZefqsilVpBw6V5dh33vYKGx50xwWpj76maAkpQrOpB7zufeldJe4
+W1UOEN84AZdRTLkVSxamWo/wp8nP9fiGS/ItRw==
+
+`protect key_keyowner="Xilinx", key_keyname="xilinxt_2021_07", key_method="rsa"
+`protect encoding = (enctype="BASE64", line_length=76, bytes=256)
+`protect key_block
+qczgIJYpE/SzErzK7eWJBGcDFEzDLm8cKbwJbPXuM6YnJxx44W+E60R3war7K2QGFAkOoCDUtDC7
+SghJGF32btaDLzeKm0tQ669sBtQmMIaBrlt7I9QBkNM8zN9GL92qxNC9o3UVWMOYy5BmH8nUPgcE
+O6lRubeltlrTuDe7UJQ2nEPHcXjpUJJ8dxktyW+LovBy1OxW8g4GRAsmEJsoOEg0HuDdWcc4IshJ
+PvwPJ7LblELAKsdkSt65y9VaklaEm7MlH4ImlgIa74TgRmutLUbWxM1QYhGE5rAzFhGU5i3RJOdx
+L3N7GGGvLMW2z9NSHbIFX+/eNII9fNJ9nZbgLA==
+
+`protect key_keyowner="Metrics Technologies Inc.", key_keyname="DSim", key_method="rsa"
+`protect encoding = (enctype="BASE64", line_length=76, bytes=256)
+`protect key_block
+Ti1NUgDv8YPk90APMwfu/mRr38QYwAxZfv0T6zQ89YS55t2EquEGVqrEafYX6rTydLOw8le1Oucv
+f2oERpSSSTih/ScZneSZmuPE/Zh2BU1Ajv0j+/+0uEWXU+5lLPbDJjnapTmJXih1MYPf0SHpZZmE
+BKj2IEBI9MPZlh6bxpa5BWJnyPdAvHf+UNaMXU9+pmbtrzUVebql4mFJu45Z3+ehmFY4FBW3zXMF
+44C4TlHACLwL3vHVMCVfeKhgdVDbpE+/IFhTStz7mZ9h9RKGanQcs6YDVM1R+2RKA1QT1fX4FiQc
+1V+FGmrm1ujxmFGXwpfNKByVlfCY0oWhRJCYYQ==
+
+`protect key_keyowner="Atrenta", key_keyname="ATR-SG-RSA-1", key_method="rsa"
+`protect encoding = (enctype="BASE64", line_length=76, bytes=384)
+`protect key_block
+HuEXFK0NXt09xU2yxxjng1OLsT+ZEM4EhqBgpr9D2ljw2vDaMBrqEsRQTc2B9soDq3ewDduHJXBd
+OGYxkPnoN6LhjULtB2nTgjcH6NxA4puZ1ZNcndDndVBo8rTW5W1OqHq6InAG0CqPpTIkuqz3ECPl
+EysI++MCDfH6tIzlekxJFIJ1McJsTq5rFuLzMMcrmkBxgcayDpOcCFuzZzCczxmt/cCCIKmDybwT
+OQXmOcLJoYLP4sFu6R9c6xO8i6p++crv2N3eIxZHKbek9xBBZqQM9EYuEtsbkqAs9XZpa16i5njR
+BDFxTKcP6r7JgFALJE89AZhBbate5JXWp0v4ECZD18aEL17CipwcWPutNMdG1apzSPP5y59n7rMG
+yxBPz1gKHc3Emkl4WcO0hjICxqmO6dMXoY8JvBSf6ry2l0sH9Ihr3Bq5WWmlhPHnoaNr5jl//vNe
+KfToWtn97eoVSt1LnmXXnSpdigbHr0UIg8AdkpdkuNRaWdVicDdgSo49
+
+`protect key_keyowner="Cadence Design Systems.", key_keyname="CDS_RSA_KEY_VER_1", key_method="rsa"
+`protect encoding = (enctype="BASE64", line_length=76, bytes=256)
+`protect key_block
+mokwst2bn6UxD6V9UdIgCIG1QQ/d0FiJqYGOTI2eHPV6YElaLjnJ8DnQmZnGS95o3x93FDOoa58C
+RwYsX1fVoVtXkj1LuZq0k7q9vEe4T8xMjpkeYtIHY9k0Xhy1Lq/xRlfzGAf9fvf9e+f4r7aR/Sb/
+uCZxxugG5niTwLENY1n3NthYL0jvo8Fmdw4Qg0nTCGWlVCws+09K0g9/lx6I9EcuHHemcHO3fOZG
+lMc4NaPNozKwnyDMoWUkwiVxyFEPFaQLNYqzjvR+CqrWfhFLo96JWhL+eaDoNuZoBVYQtNH5ZwBL
+BoO27Pw10lgcReGlZBz3BLO7T4ddynCx0+eSnw==
+
+`protect key_keyowner="Synplicity", key_keyname="SYNP15_1", key_method="rsa"
+`protect encoding = (enctype="BASE64", line_length=76, bytes=256)
+`protect key_block
+PiP7AjOQqqouyQMoBQqgWIDhUSViq94rIvGiIJ/UKMDspM/yXw1caE8AhWHTjYckC4yLpPAz5P6s
+1Z6flzDPrzVwg4e59X2cc4IMCHhedna0rDO804njcc6amRDTeLsMLTkWfvomB4xwszm2AgT+PRnB
+WHd09ZUDVFjiBXT+Oa9AicgGJHrX3w823yBPuAa704kje/SzgtiDpcTU1eLmLhLW7LpEd9KIHd9s
+ER7Uk9Orws0Kq9PMTqMX4hMn5K5mFakOeOURiEbUjdv5RiIJ2g/PlQXSItM8fHsBTQa6fOaJwQTI
+vHwK3a8ZBHpfT1YH+n7wNiNUZwD4SFXm1QVx4g==
+
+`protect key_keyowner="Mentor Graphics Corporation", key_keyname="MGC-PREC-RSA", key_method="rsa"
+`protect encoding = (enctype="BASE64", line_length=76, bytes=256)
+`protect key_block
+Ul5ZfTHJwMctaNhYRortUZizYMPYRef7uYqPSuMkxsArnxI/cjGh+KRMwzV86hyp/6TXSJIjm5ec
+2wX2UONdPN+DOJ84jYC4JbgJQrPnTj7ioD8uLX/WlyPcQzyF5keqFgj5eR5s13FskVWCuAWf5m9w
+mhFEKFjVXDAr7gVgAJh/hL8P6Psrnf+LGfiM8JhnDepsHEYykGlpD3fzru2BGgqHWqPqFMcnyVGl
+vysaIXiJz/eYKvO8RGcgd3DJAM/wPm9A0m/DWcmSnczOgTjoqkHcBg2H5uJMLvufzmjImi6LYEqq
+v04ESDEN31cSUzqUYcayvMFOnI/WNsWbFIa5+Q==
+
+`protect data_method = "AES128-CBC"
+`protect encoding = (enctype = "BASE64", line_length = 76, bytes = 18240)
+`protect data_block
+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
+`protect end_protected
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+library UNISIM;
+use UNISIM.VCOMPONENTS.ALL;
+entity median5x5_0_delay_line is
+  port (
+    pixel_out : out STD_LOGIC_VECTOR ( 0 to 0 );
+    \val_reg[2]\ : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    Q : in STD_LOGIC_VECTOR ( 4 downto 0 );
+    D : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    clk : in STD_LOGIC
+  );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of median5x5_0_delay_line : entity is "delay_line";
+end median5x5_0_delay_line;
+
+architecture STRUCTURE of median5x5_0_delay_line is
+begin
+\genblk1[0].one\: entity work.median5x5_0_single_register
+     port map (
+      D(3 downto 0) => D(3 downto 0),
+      Q(4 downto 0) => Q(4 downto 0),
+      clk => clk,
+      pixel_out(0) => pixel_out(0),
+      \val_reg[2]_0\(2 downto 0) => \val_reg[2]\(2 downto 0)
+    );
+end STRUCTURE;
+`protect begin_protected
+`protect version = 1
+`protect encrypt_agent = "XILINX"
+`protect encrypt_agent_info = "Xilinx Encryption Tool 2022.2"
+`protect key_keyowner="Synopsys", key_keyname="SNPS-VCS-RSA-2", key_method="rsa"
+`protect encoding = (enctype="BASE64", line_length=76, bytes=128)
+`protect key_block
+VHPlDkoDlWlBfBMvPBmGYmaek3s9hXXhjF28kllYPnaNm3TSnzzpXHWHc8Ye9/2L2yiQfJ1hTWou
+Ia/zeQ8h9/dtr6QB5YkyW4wlb/LbMgXb+DGIXPSllNl0IMsRQIcQDbcQm1bO/nlhb+2pjxiuaQrl
+DbvxoDwPs7z3LunRxsg=
+
+`protect key_keyowner="Aldec", key_keyname="ALDEC15_001", key_method="rsa"
+`protect encoding = (enctype="BASE64", line_length=76, bytes=256)
+`protect key_block
+lmIhoX8hXuc7tNV1sXY1K2/gXL7Y7Hq73qQF7+x03UWWTRd3uhGmVQtOMVbhIW+66UkWUHiD26zL
+fzqGor8bgSNGpSFyS11k4TwLQT4OfAMGO8C9Qmmh4+VENBnpS9TW+wHzCv8oUwht7xYtYRZvOvYK
+F3fMppz2sBkUd1lciw98ZE/UmNkhqBuMfIYF43j45DEJ55PBhOZNg91Ls4v3qBHyBAaYPFFoMry3
+d5Fw1PZyFQSEOSSpwgyds2aN0g6oIwl7zm0LJrM9VDAOxBUE50hk+oHr4jj8J8UhHQJnlEHm1Idm
+rvxKygNKRvfSpa90NYxZJFYgqnrMYg+19+9aZA==
+
+`protect key_keyowner="Mentor Graphics Corporation", key_keyname="MGC-VELOCE-RSA", key_method="rsa"
+`protect encoding = (enctype="BASE64", line_length=76, bytes=128)
+`protect key_block
+VkyCjO2onoeZWEoYQ/4ue7X5mkHyTYVW9xjdoTsGS4GdP/Q64VaCZL/jr6R8DVDXPMnH7tRMrDpo
+jpYBnyzSgOkfgqM+96ioC2fDyAaG4gYgGLmrBR6qK3/mxXwAZZX+GJ9R/eWXkc9h8xN+gsSSX6/M
+jIQCgeT6q7PB4dWT6KY=
+
+`protect key_keyowner="Mentor Graphics Corporation", key_keyname="MGC-VERIF-SIM-RSA-2", key_method="rsa"
+`protect encoding = (enctype="BASE64", line_length=76, bytes=256)
+`protect key_block
+Iub91V+TnhVlZCSLu6iKmFjix71y6/l83OPTs8uewWvkE7WcqYxEKi9fonXEkzAtWzuKwEUqnOlN
+VBsNJqPUdKcd22q523mrdt89mpdosWD+hvZdO7ELhJniY5u9h49FFkubpN2JiUTcIcKEYxVNlds4
+wyvaYUqbPVH5v2ooJwDdimS4GVn9HerCOgPwfshvQDNlMTxLcYju4v8BHMc5Rub9Q/ihvpQU74v2
+ouZ9XIwA+C6pBLwvaqS8jE7HXOokgqJilaX/W/t+KEgiFry/txRTMU9WMD7tCN7lcfjCydmS3Lq+
+3u6Hsr0S8BwNjcaDpZDnBTygUJd4JSqREnk33w==
+
+`protect key_keyowner="Real Intent", key_keyname="RI-RSA-KEY-1", key_method="rsa"
+`protect encoding = (enctype="BASE64", line_length=76, bytes=256)
+`protect key_block
+U46EWFmKmpZGaWfyL+dokyQtJtaOYsa7HCW/+fdtw9/yHKTWFpmqKBZngBj5rPkNhtTDDCJkqsYj
+tUXg1j4tgIBaCQn9B0q/aG+B3gPLrudp9hLL25mVbsfiTzdekiV2hJMmhuMoavKKPJHC6zyW7kZi
+80er82OQy8h+Df/fe6TRjH9xEt3/b80tRKUMbxkLfnnkAyyf1KfOhB6/uyI4mwXuQR+DsAbzybKR
+YtXpOiW72tGrXTFlzcwbHamWZefqsilVpBw6V5dh33vYKGx50xwWpj76maAkpQrOpB7zufeldJe4
+W1UOEN84AZdRTLkVSxamWo/wp8nP9fiGS/ItRw==
+
+`protect key_keyowner="Xilinx", key_keyname="xilinxt_2021_07", key_method="rsa"
+`protect encoding = (enctype="BASE64", line_length=76, bytes=256)
+`protect key_block
+qczgIJYpE/SzErzK7eWJBGcDFEzDLm8cKbwJbPXuM6YnJxx44W+E60R3war7K2QGFAkOoCDUtDC7
+SghJGF32btaDLzeKm0tQ669sBtQmMIaBrlt7I9QBkNM8zN9GL92qxNC9o3UVWMOYy5BmH8nUPgcE
+O6lRubeltlrTuDe7UJQ2nEPHcXjpUJJ8dxktyW+LovBy1OxW8g4GRAsmEJsoOEg0HuDdWcc4IshJ
+PvwPJ7LblELAKsdkSt65y9VaklaEm7MlH4ImlgIa74TgRmutLUbWxM1QYhGE5rAzFhGU5i3RJOdx
+L3N7GGGvLMW2z9NSHbIFX+/eNII9fNJ9nZbgLA==
+
+`protect key_keyowner="Metrics Technologies Inc.", key_keyname="DSim", key_method="rsa"
+`protect encoding = (enctype="BASE64", line_length=76, bytes=256)
+`protect key_block
+Ti1NUgDv8YPk90APMwfu/mRr38QYwAxZfv0T6zQ89YS55t2EquEGVqrEafYX6rTydLOw8le1Oucv
+f2oERpSSSTih/ScZneSZmuPE/Zh2BU1Ajv0j+/+0uEWXU+5lLPbDJjnapTmJXih1MYPf0SHpZZmE
+BKj2IEBI9MPZlh6bxpa5BWJnyPdAvHf+UNaMXU9+pmbtrzUVebql4mFJu45Z3+ehmFY4FBW3zXMF
+44C4TlHACLwL3vHVMCVfeKhgdVDbpE+/IFhTStz7mZ9h9RKGanQcs6YDVM1R+2RKA1QT1fX4FiQc
+1V+FGmrm1ujxmFGXwpfNKByVlfCY0oWhRJCYYQ==
+
+`protect key_keyowner="Atrenta", key_keyname="ATR-SG-RSA-1", key_method="rsa"
+`protect encoding = (enctype="BASE64", line_length=76, bytes=384)
+`protect key_block
+HuEXFK0NXt09xU2yxxjng1OLsT+ZEM4EhqBgpr9D2ljw2vDaMBrqEsRQTc2B9soDq3ewDduHJXBd
+OGYxkPnoN6LhjULtB2nTgjcH6NxA4puZ1ZNcndDndVBo8rTW5W1OqHq6InAG0CqPpTIkuqz3ECPl
+EysI++MCDfH6tIzlekxJFIJ1McJsTq5rFuLzMMcrmkBxgcayDpOcCFuzZzCczxmt/cCCIKmDybwT
+OQXmOcLJoYLP4sFu6R9c6xO8i6p++crv2N3eIxZHKbek9xBBZqQM9EYuEtsbkqAs9XZpa16i5njR
+BDFxTKcP6r7JgFALJE89AZhBbate5JXWp0v4ECZD18aEL17CipwcWPutNMdG1apzSPP5y59n7rMG
+yxBPz1gKHc3Emkl4WcO0hjICxqmO6dMXoY8JvBSf6ry2l0sH9Ihr3Bq5WWmlhPHnoaNr5jl//vNe
+KfToWtn97eoVSt1LnmXXnSpdigbHr0UIg8AdkpdkuNRaWdVicDdgSo49
+
+`protect key_keyowner="Cadence Design Systems.", key_keyname="CDS_RSA_KEY_VER_1", key_method="rsa"
+`protect encoding = (enctype="BASE64", line_length=76, bytes=256)
+`protect key_block
+mokwst2bn6UxD6V9UdIgCIG1QQ/d0FiJqYGOTI2eHPV6YElaLjnJ8DnQmZnGS95o3x93FDOoa58C
+RwYsX1fVoVtXkj1LuZq0k7q9vEe4T8xMjpkeYtIHY9k0Xhy1Lq/xRlfzGAf9fvf9e+f4r7aR/Sb/
+uCZxxugG5niTwLENY1n3NthYL0jvo8Fmdw4Qg0nTCGWlVCws+09K0g9/lx6I9EcuHHemcHO3fOZG
+lMc4NaPNozKwnyDMoWUkwiVxyFEPFaQLNYqzjvR+CqrWfhFLo96JWhL+eaDoNuZoBVYQtNH5ZwBL
+BoO27Pw10lgcReGlZBz3BLO7T4ddynCx0+eSnw==
+
+`protect key_keyowner="Synplicity", key_keyname="SYNP15_1", key_method="rsa"
+`protect encoding = (enctype="BASE64", line_length=76, bytes=256)
+`protect key_block
+PiP7AjOQqqouyQMoBQqgWIDhUSViq94rIvGiIJ/UKMDspM/yXw1caE8AhWHTjYckC4yLpPAz5P6s
+1Z6flzDPrzVwg4e59X2cc4IMCHhedna0rDO804njcc6amRDTeLsMLTkWfvomB4xwszm2AgT+PRnB
+WHd09ZUDVFjiBXT+Oa9AicgGJHrX3w823yBPuAa704kje/SzgtiDpcTU1eLmLhLW7LpEd9KIHd9s
+ER7Uk9Orws0Kq9PMTqMX4hMn5K5mFakOeOURiEbUjdv5RiIJ2g/PlQXSItM8fHsBTQa6fOaJwQTI
+vHwK3a8ZBHpfT1YH+n7wNiNUZwD4SFXm1QVx4g==
+
+`protect key_keyowner="Mentor Graphics Corporation", key_keyname="MGC-PREC-RSA", key_method="rsa"
+`protect encoding = (enctype="BASE64", line_length=76, bytes=256)
+`protect key_block
+Ul5ZfTHJwMctaNhYRortUZizYMPYRef7uYqPSuMkxsArnxI/cjGh+KRMwzV86hyp/6TXSJIjm5ec
+2wX2UONdPN+DOJ84jYC4JbgJQrPnTj7ioD8uLX/WlyPcQzyF5keqFgj5eR5s13FskVWCuAWf5m9w
+mhFEKFjVXDAr7gVgAJh/hL8P6Psrnf+LGfiM8JhnDepsHEYykGlpD3fzru2BGgqHWqPqFMcnyVGl
+vysaIXiJz/eYKvO8RGcgd3DJAM/wPm9A0m/DWcmSnczOgTjoqkHcBg2H5uJMLvufzmjImi6LYEqq
+v04ESDEN31cSUzqUYcayvMFOnI/WNsWbFIa5+Q==
+
+`protect data_method = "AES128-CBC"
+`protect encoding = (enctype = "BASE64", line_length = 76, bytes = 18480)
+`protect data_block
+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
+wt0wKz5VJ3WEMYnM
+`protect end_protected
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+library UNISIM;
+use UNISIM.VCOMPONENTS.ALL;
+entity median5x5_0_delayLineBRAM is
+  port (
+    clka : in STD_LOGIC;
+    wea : in STD_LOGIC_VECTOR ( 0 to 0 );
+    addra : in STD_LOGIC_VECTOR ( 10 downto 0 );
+    dina : in STD_LOGIC_VECTOR ( 16 downto 0 );
+    douta : out STD_LOGIC_VECTOR ( 16 downto 0 )
+  );
+  attribute CHECK_LICENSE_TYPE : string;
+  attribute CHECK_LICENSE_TYPE of median5x5_0_delayLineBRAM : entity is "delayLineBRAM,blk_mem_gen_v8_4_5,{}";
+  attribute DowngradeIPIdentifiedWarnings : string;
+  attribute DowngradeIPIdentifiedWarnings of median5x5_0_delayLineBRAM : entity is "yes";
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of median5x5_0_delayLineBRAM : entity is "delayLineBRAM";
+  attribute X_CORE_INFO : string;
+  attribute X_CORE_INFO of median5x5_0_delayLineBRAM : entity is "blk_mem_gen_v8_4_5,Vivado 2022.2";
+end median5x5_0_delayLineBRAM;
+
+architecture STRUCTURE of median5x5_0_delayLineBRAM is
+  signal \<const0>\ : STD_LOGIC;
+  signal \^douta\ : STD_LOGIC_VECTOR ( 15 downto 2 );
+  signal NLW_U0_dbiterr_UNCONNECTED : STD_LOGIC;
+  signal NLW_U0_rsta_busy_UNCONNECTED : STD_LOGIC;
+  signal NLW_U0_rstb_busy_UNCONNECTED : STD_LOGIC;
+  signal NLW_U0_s_axi_arready_UNCONNECTED : STD_LOGIC;
+  signal NLW_U0_s_axi_awready_UNCONNECTED : STD_LOGIC;
+  signal NLW_U0_s_axi_bvalid_UNCONNECTED : STD_LOGIC;
+  signal NLW_U0_s_axi_dbiterr_UNCONNECTED : STD_LOGIC;
+  signal NLW_U0_s_axi_rlast_UNCONNECTED : STD_LOGIC;
+  signal NLW_U0_s_axi_rvalid_UNCONNECTED : STD_LOGIC;
+  signal NLW_U0_s_axi_sbiterr_UNCONNECTED : STD_LOGIC;
+  signal NLW_U0_s_axi_wready_UNCONNECTED : STD_LOGIC;
+  signal NLW_U0_sbiterr_UNCONNECTED : STD_LOGIC;
+  signal NLW_U0_douta_UNCONNECTED : STD_LOGIC_VECTOR ( 16 downto 0 );
+  signal NLW_U0_doutb_UNCONNECTED : STD_LOGIC_VECTOR ( 16 downto 0 );
+  signal NLW_U0_rdaddrecc_UNCONNECTED : STD_LOGIC_VECTOR ( 10 downto 0 );
+  signal NLW_U0_s_axi_bid_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal NLW_U0_s_axi_bresp_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal NLW_U0_s_axi_rdaddrecc_UNCONNECTED : STD_LOGIC_VECTOR ( 10 downto 0 );
+  signal NLW_U0_s_axi_rdata_UNCONNECTED : STD_LOGIC_VECTOR ( 16 downto 0 );
+  signal NLW_U0_s_axi_rid_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal NLW_U0_s_axi_rresp_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
+  attribute C_ADDRA_WIDTH : integer;
+  attribute C_ADDRA_WIDTH of U0 : label is 11;
+  attribute C_ADDRB_WIDTH : integer;
+  attribute C_ADDRB_WIDTH of U0 : label is 11;
+  attribute C_ALGORITHM : integer;
+  attribute C_ALGORITHM of U0 : label is 1;
+  attribute C_AXI_ID_WIDTH : integer;
+  attribute C_AXI_ID_WIDTH of U0 : label is 4;
+  attribute C_AXI_SLAVE_TYPE : integer;
+  attribute C_AXI_SLAVE_TYPE of U0 : label is 0;
+  attribute C_AXI_TYPE : integer;
+  attribute C_AXI_TYPE of U0 : label is 1;
+  attribute C_BYTE_SIZE : integer;
+  attribute C_BYTE_SIZE of U0 : label is 9;
+  attribute C_COMMON_CLK : integer;
+  attribute C_COMMON_CLK of U0 : label is 0;
+  attribute C_COUNT_18K_BRAM : string;
+  attribute C_COUNT_18K_BRAM of U0 : label is "0";
+  attribute C_COUNT_36K_BRAM : string;
+  attribute C_COUNT_36K_BRAM of U0 : label is "1";
+  attribute C_CTRL_ECC_ALGO : string;
+  attribute C_CTRL_ECC_ALGO of U0 : label is "NONE";
+  attribute C_DEFAULT_DATA : string;
+  attribute C_DEFAULT_DATA of U0 : label is "0";
+  attribute C_DISABLE_WARN_BHV_COLL : integer;
+  attribute C_DISABLE_WARN_BHV_COLL of U0 : label is 0;
+  attribute C_DISABLE_WARN_BHV_RANGE : integer;
+  attribute C_DISABLE_WARN_BHV_RANGE of U0 : label is 0;
+  attribute C_ELABORATION_DIR : string;
+  attribute C_ELABORATION_DIR of U0 : label is "./";
+  attribute C_ENABLE_32BIT_ADDRESS : integer;
+  attribute C_ENABLE_32BIT_ADDRESS of U0 : label is 0;
+  attribute C_EN_DEEPSLEEP_PIN : integer;
+  attribute C_EN_DEEPSLEEP_PIN of U0 : label is 0;
+  attribute C_EN_ECC_PIPE : integer;
+  attribute C_EN_ECC_PIPE of U0 : label is 0;
+  attribute C_EN_RDADDRA_CHG : integer;
+  attribute C_EN_RDADDRA_CHG of U0 : label is 0;
+  attribute C_EN_RDADDRB_CHG : integer;
+  attribute C_EN_RDADDRB_CHG of U0 : label is 0;
+  attribute C_EN_SAFETY_CKT : integer;
+  attribute C_EN_SAFETY_CKT of U0 : label is 0;
+  attribute C_EN_SHUTDOWN_PIN : integer;
+  attribute C_EN_SHUTDOWN_PIN of U0 : label is 0;
+  attribute C_EN_SLEEP_PIN : integer;
+  attribute C_EN_SLEEP_PIN of U0 : label is 0;
+  attribute C_EST_POWER_SUMMARY : string;
+  attribute C_EST_POWER_SUMMARY of U0 : label is "Estimated Power for IP     :     2.862 mW";
+  attribute C_FAMILY : string;
+  attribute C_FAMILY of U0 : label is "zynq";
+  attribute C_HAS_AXI_ID : integer;
+  attribute C_HAS_AXI_ID of U0 : label is 0;
+  attribute C_HAS_ENA : integer;
+  attribute C_HAS_ENA of U0 : label is 0;
+  attribute C_HAS_ENB : integer;
+  attribute C_HAS_ENB of U0 : label is 0;
+  attribute C_HAS_INJECTERR : integer;
+  attribute C_HAS_INJECTERR of U0 : label is 0;
+  attribute C_HAS_MEM_OUTPUT_REGS_A : integer;
+  attribute C_HAS_MEM_OUTPUT_REGS_A of U0 : label is 1;
+  attribute C_HAS_MEM_OUTPUT_REGS_B : integer;
+  attribute C_HAS_MEM_OUTPUT_REGS_B of U0 : label is 0;
+  attribute C_HAS_MUX_OUTPUT_REGS_A : integer;
+  attribute C_HAS_MUX_OUTPUT_REGS_A of U0 : label is 0;
+  attribute C_HAS_MUX_OUTPUT_REGS_B : integer;
+  attribute C_HAS_MUX_OUTPUT_REGS_B of U0 : label is 0;
+  attribute C_HAS_REGCEA : integer;
+  attribute C_HAS_REGCEA of U0 : label is 0;
+  attribute C_HAS_REGCEB : integer;
+  attribute C_HAS_REGCEB of U0 : label is 0;
+  attribute C_HAS_RSTA : integer;
+  attribute C_HAS_RSTA of U0 : label is 0;
+  attribute C_HAS_RSTB : integer;
+  attribute C_HAS_RSTB of U0 : label is 0;
+  attribute C_HAS_SOFTECC_INPUT_REGS_A : integer;
+  attribute C_HAS_SOFTECC_INPUT_REGS_A of U0 : label is 0;
+  attribute C_HAS_SOFTECC_OUTPUT_REGS_B : integer;
+  attribute C_HAS_SOFTECC_OUTPUT_REGS_B of U0 : label is 0;
+  attribute C_INITA_VAL : string;
+  attribute C_INITA_VAL of U0 : label is "0";
+  attribute C_INITB_VAL : string;
+  attribute C_INITB_VAL of U0 : label is "0";
+  attribute C_INIT_FILE : string;
+  attribute C_INIT_FILE of U0 : label is "delayLineBRAM.mem";
+  attribute C_INIT_FILE_NAME : string;
+  attribute C_INIT_FILE_NAME of U0 : label is "no_coe_file_loaded";
+  attribute C_INTERFACE_TYPE : integer;
+  attribute C_INTERFACE_TYPE of U0 : label is 0;
+  attribute C_LOAD_INIT_FILE : integer;
+  attribute C_LOAD_INIT_FILE of U0 : label is 0;
+  attribute C_MEM_TYPE : integer;
+  attribute C_MEM_TYPE of U0 : label is 0;
+  attribute C_MUX_PIPELINE_STAGES : integer;
+  attribute C_MUX_PIPELINE_STAGES of U0 : label is 0;
+  attribute C_PRIM_TYPE : integer;
+  attribute C_PRIM_TYPE of U0 : label is 1;
+  attribute C_READ_DEPTH_A : integer;
+  attribute C_READ_DEPTH_A of U0 : label is 2048;
+  attribute C_READ_DEPTH_B : integer;
+  attribute C_READ_DEPTH_B of U0 : label is 2048;
+  attribute C_READ_LATENCY_A : integer;
+  attribute C_READ_LATENCY_A of U0 : label is 1;
+  attribute C_READ_LATENCY_B : integer;
+  attribute C_READ_LATENCY_B of U0 : label is 1;
+  attribute C_READ_WIDTH_A : integer;
+  attribute C_READ_WIDTH_A of U0 : label is 17;
+  attribute C_READ_WIDTH_B : integer;
+  attribute C_READ_WIDTH_B of U0 : label is 17;
+  attribute C_RSTRAM_A : integer;
+  attribute C_RSTRAM_A of U0 : label is 0;
+  attribute C_RSTRAM_B : integer;
+  attribute C_RSTRAM_B of U0 : label is 0;
+  attribute C_RST_PRIORITY_A : string;
+  attribute C_RST_PRIORITY_A of U0 : label is "CE";
+  attribute C_RST_PRIORITY_B : string;
+  attribute C_RST_PRIORITY_B of U0 : label is "CE";
+  attribute C_SIM_COLLISION_CHECK : string;
+  attribute C_SIM_COLLISION_CHECK of U0 : label is "ALL";
+  attribute C_USE_BRAM_BLOCK : integer;
+  attribute C_USE_BRAM_BLOCK of U0 : label is 0;
+  attribute C_USE_BYTE_WEA : integer;
+  attribute C_USE_BYTE_WEA of U0 : label is 0;
+  attribute C_USE_BYTE_WEB : integer;
+  attribute C_USE_BYTE_WEB of U0 : label is 0;
+  attribute C_USE_DEFAULT_DATA : integer;
+  attribute C_USE_DEFAULT_DATA of U0 : label is 0;
+  attribute C_USE_ECC : integer;
+  attribute C_USE_ECC of U0 : label is 0;
+  attribute C_USE_SOFTECC : integer;
+  attribute C_USE_SOFTECC of U0 : label is 0;
+  attribute C_USE_URAM : integer;
+  attribute C_USE_URAM of U0 : label is 0;
+  attribute C_WEA_WIDTH : integer;
+  attribute C_WEA_WIDTH of U0 : label is 1;
+  attribute C_WEB_WIDTH : integer;
+  attribute C_WEB_WIDTH of U0 : label is 1;
+  attribute C_WRITE_DEPTH_A : integer;
+  attribute C_WRITE_DEPTH_A of U0 : label is 2048;
+  attribute C_WRITE_DEPTH_B : integer;
+  attribute C_WRITE_DEPTH_B of U0 : label is 2048;
+  attribute C_WRITE_MODE_A : string;
+  attribute C_WRITE_MODE_A of U0 : label is "READ_FIRST";
+  attribute C_WRITE_MODE_B : string;
+  attribute C_WRITE_MODE_B of U0 : label is "WRITE_FIRST";
+  attribute C_WRITE_WIDTH_A : integer;
+  attribute C_WRITE_WIDTH_A of U0 : label is 17;
+  attribute C_WRITE_WIDTH_B : integer;
+  attribute C_WRITE_WIDTH_B of U0 : label is 17;
+  attribute C_XDEVICEFAMILY : string;
+  attribute C_XDEVICEFAMILY of U0 : label is "zynq";
+  attribute downgradeipidentifiedwarnings of U0 : label is "yes";
+  attribute is_du_within_envelope : string;
+  attribute is_du_within_envelope of U0 : label is "true";
+  attribute X_INTERFACE_INFO : string;
+  attribute X_INTERFACE_INFO of clka : signal is "xilinx.com:interface:bram:1.0 BRAM_PORTA CLK";
+  attribute X_INTERFACE_PARAMETER : string;
+  attribute X_INTERFACE_PARAMETER of clka : signal is "XIL_INTERFACENAME BRAM_PORTA, MEM_SIZE 8192, MEM_WIDTH 32, MEM_ECC NONE, MASTER_TYPE OTHER, READ_LATENCY 1";
+  attribute X_INTERFACE_INFO of addra : signal is "xilinx.com:interface:bram:1.0 BRAM_PORTA ADDR";
+  attribute X_INTERFACE_INFO of dina : signal is "xilinx.com:interface:bram:1.0 BRAM_PORTA DIN";
+  attribute X_INTERFACE_INFO of douta : signal is "xilinx.com:interface:bram:1.0 BRAM_PORTA DOUT";
+  attribute X_INTERFACE_INFO of wea : signal is "xilinx.com:interface:bram:1.0 BRAM_PORTA WE";
+begin
+  douta(16) <= \<const0>\;
+  douta(15 downto 2) <= \^douta\(15 downto 2);
+  douta(1) <= \<const0>\;
+  douta(0) <= \<const0>\;
+GND: unisim.vcomponents.GND
+     port map (
+      G => \<const0>\
+    );
+U0: entity work.median5x5_0_blk_mem_gen_v8_4_5
+     port map (
+      addra(10 downto 0) => addra(10 downto 0),
+      addrb(10 downto 0) => B"00000000000",
+      clka => clka,
+      clkb => '0',
+      dbiterr => NLW_U0_dbiterr_UNCONNECTED,
+      deepsleep => '0',
+      dina(16) => '0',
+      dina(15 downto 0) => dina(15 downto 0),
+      dinb(16 downto 0) => B"00000000000000000",
+      douta(16) => NLW_U0_douta_UNCONNECTED(16),
+      douta(15 downto 2) => \^douta\(15 downto 2),
+      douta(1 downto 0) => NLW_U0_douta_UNCONNECTED(1 downto 0),
+      doutb(16 downto 0) => NLW_U0_doutb_UNCONNECTED(16 downto 0),
+      eccpipece => '0',
+      ena => '0',
+      enb => '0',
+      injectdbiterr => '0',
+      injectsbiterr => '0',
+      rdaddrecc(10 downto 0) => NLW_U0_rdaddrecc_UNCONNECTED(10 downto 0),
+      regcea => '0',
+      regceb => '0',
+      rsta => '0',
+      rsta_busy => NLW_U0_rsta_busy_UNCONNECTED,
+      rstb => '0',
+      rstb_busy => NLW_U0_rstb_busy_UNCONNECTED,
+      s_aclk => '0',
+      s_aresetn => '0',
+      s_axi_araddr(31 downto 0) => B"00000000000000000000000000000000",
+      s_axi_arburst(1 downto 0) => B"00",
+      s_axi_arid(3 downto 0) => B"0000",
+      s_axi_arlen(7 downto 0) => B"00000000",
+      s_axi_arready => NLW_U0_s_axi_arready_UNCONNECTED,
+      s_axi_arsize(2 downto 0) => B"000",
+      s_axi_arvalid => '0',
+      s_axi_awaddr(31 downto 0) => B"00000000000000000000000000000000",
+      s_axi_awburst(1 downto 0) => B"00",
+      s_axi_awid(3 downto 0) => B"0000",
+      s_axi_awlen(7 downto 0) => B"00000000",
+      s_axi_awready => NLW_U0_s_axi_awready_UNCONNECTED,
+      s_axi_awsize(2 downto 0) => B"000",
+      s_axi_awvalid => '0',
+      s_axi_bid(3 downto 0) => NLW_U0_s_axi_bid_UNCONNECTED(3 downto 0),
+      s_axi_bready => '0',
+      s_axi_bresp(1 downto 0) => NLW_U0_s_axi_bresp_UNCONNECTED(1 downto 0),
+      s_axi_bvalid => NLW_U0_s_axi_bvalid_UNCONNECTED,
+      s_axi_dbiterr => NLW_U0_s_axi_dbiterr_UNCONNECTED,
+      s_axi_injectdbiterr => '0',
+      s_axi_injectsbiterr => '0',
+      s_axi_rdaddrecc(10 downto 0) => NLW_U0_s_axi_rdaddrecc_UNCONNECTED(10 downto 0),
+      s_axi_rdata(16 downto 0) => NLW_U0_s_axi_rdata_UNCONNECTED(16 downto 0),
+      s_axi_rid(3 downto 0) => NLW_U0_s_axi_rid_UNCONNECTED(3 downto 0),
+      s_axi_rlast => NLW_U0_s_axi_rlast_UNCONNECTED,
+      s_axi_rready => '0',
+      s_axi_rresp(1 downto 0) => NLW_U0_s_axi_rresp_UNCONNECTED(1 downto 0),
+      s_axi_rvalid => NLW_U0_s_axi_rvalid_UNCONNECTED,
+      s_axi_sbiterr => NLW_U0_s_axi_sbiterr_UNCONNECTED,
+      s_axi_wdata(16 downto 0) => B"00000000000000000",
+      s_axi_wlast => '0',
+      s_axi_wready => NLW_U0_s_axi_wready_UNCONNECTED,
+      s_axi_wstrb(0) => '0',
+      s_axi_wvalid => '0',
+      sbiterr => NLW_U0_sbiterr_UNCONNECTED,
+      shutdown => '0',
+      sleep => '0',
+      wea(0) => '1',
+      web(0) => '0'
+    );
+end STRUCTURE;
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+library UNISIM;
+use UNISIM.VCOMPONENTS.ALL;
+entity median5x5_0_delayLinieBRAM_WP is
+  port (
+    douta : out STD_LOGIC_VECTOR ( 13 downto 0 );
+    clk : in STD_LOGIC;
+    Q : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    dina : in STD_LOGIC_VECTOR ( 13 downto 0 )
+  );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of median5x5_0_delayLinieBRAM_WP : entity is "delayLinieBRAM_WP";
+end median5x5_0_delayLinieBRAM_WP;
+
+architecture STRUCTURE of median5x5_0_delayLinieBRAM_WP is
+  signal \position0_carry__0_i_1_n_0\ : STD_LOGIC;
+  signal \position0_carry__0_n_3\ : STD_LOGIC;
+  signal position0_carry_i_1_n_0 : STD_LOGIC;
+  signal position0_carry_i_2_n_0 : STD_LOGIC;
+  signal position0_carry_i_3_n_0 : STD_LOGIC;
+  signal position0_carry_i_4_n_0 : STD_LOGIC;
+  signal position0_carry_n_0 : STD_LOGIC;
+  signal position0_carry_n_1 : STD_LOGIC;
+  signal position0_carry_n_2 : STD_LOGIC;
+  signal position0_carry_n_3 : STD_LOGIC;
+  signal \position[0]_i_2_n_0\ : STD_LOGIC;
+  signal position_reg : STD_LOGIC_VECTOR ( 10 downto 0 );
+  signal \position_reg[0]_i_1_n_0\ : STD_LOGIC;
+  signal \position_reg[0]_i_1_n_1\ : STD_LOGIC;
+  signal \position_reg[0]_i_1_n_2\ : STD_LOGIC;
+  signal \position_reg[0]_i_1_n_3\ : STD_LOGIC;
+  signal \position_reg[0]_i_1_n_4\ : STD_LOGIC;
+  signal \position_reg[0]_i_1_n_5\ : STD_LOGIC;
+  signal \position_reg[0]_i_1_n_6\ : STD_LOGIC;
+  signal \position_reg[0]_i_1_n_7\ : STD_LOGIC;
+  signal \position_reg[12]_i_1_n_7\ : STD_LOGIC;
+  signal \position_reg[4]_i_1_n_0\ : STD_LOGIC;
+  signal \position_reg[4]_i_1_n_1\ : STD_LOGIC;
+  signal \position_reg[4]_i_1_n_2\ : STD_LOGIC;
+  signal \position_reg[4]_i_1_n_3\ : STD_LOGIC;
+  signal \position_reg[4]_i_1_n_4\ : STD_LOGIC;
+  signal \position_reg[4]_i_1_n_5\ : STD_LOGIC;
+  signal \position_reg[4]_i_1_n_6\ : STD_LOGIC;
+  signal \position_reg[4]_i_1_n_7\ : STD_LOGIC;
+  signal \position_reg[8]_i_1_n_0\ : STD_LOGIC;
+  signal \position_reg[8]_i_1_n_1\ : STD_LOGIC;
+  signal \position_reg[8]_i_1_n_2\ : STD_LOGIC;
+  signal \position_reg[8]_i_1_n_3\ : STD_LOGIC;
+  signal \position_reg[8]_i_1_n_4\ : STD_LOGIC;
+  signal \position_reg[8]_i_1_n_5\ : STD_LOGIC;
+  signal \position_reg[8]_i_1_n_6\ : STD_LOGIC;
+  signal \position_reg[8]_i_1_n_7\ : STD_LOGIC;
+  signal \position_reg__0\ : STD_LOGIC_VECTOR ( 12 downto 11 );
+  signal NLW_BRAM_douta_UNCONNECTED : STD_LOGIC_VECTOR ( 16 downto 0 );
+  signal NLW_position0_carry_O_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal \NLW_position0_carry__0_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 1 );
+  signal \NLW_position0_carry__0_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal \NLW_position_reg[12]_i_1_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal \NLW_position_reg[12]_i_1_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 1 );
+  attribute CHECK_LICENSE_TYPE : string;
+  attribute CHECK_LICENSE_TYPE of BRAM : label is "delayLineBRAM,blk_mem_gen_v8_4_5,{}";
+  attribute downgradeipidentifiedwarnings : string;
+  attribute downgradeipidentifiedwarnings of BRAM : label is "yes";
+  attribute x_core_info : string;
+  attribute x_core_info of BRAM : label is "blk_mem_gen_v8_4_5,Vivado 2022.2";
+  attribute ADDER_THRESHOLD : integer;
+  attribute ADDER_THRESHOLD of \position_reg[0]_i_1\ : label is 11;
+  attribute ADDER_THRESHOLD of \position_reg[12]_i_1\ : label is 11;
+  attribute ADDER_THRESHOLD of \position_reg[4]_i_1\ : label is 11;
+  attribute ADDER_THRESHOLD of \position_reg[8]_i_1\ : label is 11;
+begin
+BRAM: entity work.median5x5_0_delayLineBRAM
+     port map (
+      addra(10 downto 0) => position_reg(10 downto 0),
+      clka => clk,
+      dina(16) => '0',
+      dina(15 downto 14) => Q(1 downto 0),
+      dina(13 downto 0) => dina(13 downto 0),
+      douta(16) => NLW_BRAM_douta_UNCONNECTED(16),
+      douta(15 downto 2) => douta(13 downto 0),
+      douta(1 downto 0) => NLW_BRAM_douta_UNCONNECTED(1 downto 0),
+      wea(0) => '1'
+    );
+position0_carry: unisim.vcomponents.CARRY4
+     port map (
+      CI => '0',
+      CO(3) => position0_carry_n_0,
+      CO(2) => position0_carry_n_1,
+      CO(1) => position0_carry_n_2,
+      CO(0) => position0_carry_n_3,
+      CYINIT => '1',
+      DI(3 downto 0) => B"0000",
+      O(3 downto 0) => NLW_position0_carry_O_UNCONNECTED(3 downto 0),
+      S(3) => position0_carry_i_1_n_0,
+      S(2) => position0_carry_i_2_n_0,
+      S(1) => position0_carry_i_3_n_0,
+      S(0) => position0_carry_i_4_n_0
+    );
+\position0_carry__0\: unisim.vcomponents.CARRY4
+     port map (
+      CI => position0_carry_n_0,
+      CO(3 downto 1) => \NLW_position0_carry__0_CO_UNCONNECTED\(3 downto 1),
+      CO(0) => \position0_carry__0_n_3\,
+      CYINIT => '0',
+      DI(3 downto 0) => B"0000",
+      O(3 downto 0) => \NLW_position0_carry__0_O_UNCONNECTED\(3 downto 0),
+      S(3 downto 1) => B"000",
+      S(0) => \position0_carry__0_i_1_n_0\
+    );
+\position0_carry__0_i_1\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => \position_reg__0\(12),
+      O => \position0_carry__0_i_1_n_0\
+    );
+position0_carry_i_1: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"20"
+    )
+        port map (
+      I0 => position_reg(9),
+      I1 => \position_reg__0\(11),
+      I2 => position_reg(10),
+      O => position0_carry_i_1_n_0
+    );
+position0_carry_i_2: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"02"
+    )
+        port map (
+      I0 => position_reg(6),
+      I1 => position_reg(8),
+      I2 => position_reg(7),
+      O => position0_carry_i_2_n_0
+    );
+position0_carry_i_3: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"20"
+    )
+        port map (
+      I0 => position_reg(3),
+      I1 => position_reg(4),
+      I2 => position_reg(5),
+      O => position0_carry_i_3_n_0
+    );
+position0_carry_i_4: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"04"
+    )
+        port map (
+      I0 => position_reg(2),
+      I1 => position_reg(1),
+      I2 => position_reg(0),
+      O => position0_carry_i_4_n_0
+    );
+\position[0]_i_2\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => position_reg(0),
+      O => \position[0]_i_2_n_0\
+    );
+\position_reg[0]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => clk,
+      CE => '1',
+      D => \position_reg[0]_i_1_n_7\,
+      Q => position_reg(0),
+      R => \position0_carry__0_n_3\
+    );
+\position_reg[0]_i_1\: unisim.vcomponents.CARRY4
+     port map (
+      CI => '0',
+      CO(3) => \position_reg[0]_i_1_n_0\,
+      CO(2) => \position_reg[0]_i_1_n_1\,
+      CO(1) => \position_reg[0]_i_1_n_2\,
+      CO(0) => \position_reg[0]_i_1_n_3\,
+      CYINIT => '0',
+      DI(3 downto 0) => B"0001",
+      O(3) => \position_reg[0]_i_1_n_4\,
+      O(2) => \position_reg[0]_i_1_n_5\,
+      O(1) => \position_reg[0]_i_1_n_6\,
+      O(0) => \position_reg[0]_i_1_n_7\,
+      S(3 downto 1) => position_reg(3 downto 1),
+      S(0) => \position[0]_i_2_n_0\
+    );
+\position_reg[10]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => clk,
+      CE => '1',
+      D => \position_reg[8]_i_1_n_5\,
+      Q => position_reg(10),
+      R => \position0_carry__0_n_3\
+    );
+\position_reg[11]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => clk,
+      CE => '1',
+      D => \position_reg[8]_i_1_n_4\,
+      Q => \position_reg__0\(11),
+      R => \position0_carry__0_n_3\
+    );
+\position_reg[12]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => clk,
+      CE => '1',
+      D => \position_reg[12]_i_1_n_7\,
+      Q => \position_reg__0\(12),
+      R => \position0_carry__0_n_3\
+    );
+\position_reg[12]_i_1\: unisim.vcomponents.CARRY4
+     port map (
+      CI => \position_reg[8]_i_1_n_0\,
+      CO(3 downto 0) => \NLW_position_reg[12]_i_1_CO_UNCONNECTED\(3 downto 0),
+      CYINIT => '0',
+      DI(3 downto 0) => B"0000",
+      O(3 downto 1) => \NLW_position_reg[12]_i_1_O_UNCONNECTED\(3 downto 1),
+      O(0) => \position_reg[12]_i_1_n_7\,
+      S(3 downto 1) => B"000",
+      S(0) => \position_reg__0\(12)
+    );
+\position_reg[1]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => clk,
+      CE => '1',
+      D => \position_reg[0]_i_1_n_6\,
+      Q => position_reg(1),
+      R => \position0_carry__0_n_3\
+    );
+\position_reg[2]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => clk,
+      CE => '1',
+      D => \position_reg[0]_i_1_n_5\,
+      Q => position_reg(2),
+      R => \position0_carry__0_n_3\
+    );
+\position_reg[3]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => clk,
+      CE => '1',
+      D => \position_reg[0]_i_1_n_4\,
+      Q => position_reg(3),
+      R => \position0_carry__0_n_3\
+    );
+\position_reg[4]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => clk,
+      CE => '1',
+      D => \position_reg[4]_i_1_n_7\,
+      Q => position_reg(4),
+      R => \position0_carry__0_n_3\
+    );
+\position_reg[4]_i_1\: unisim.vcomponents.CARRY4
+     port map (
+      CI => \position_reg[0]_i_1_n_0\,
+      CO(3) => \position_reg[4]_i_1_n_0\,
+      CO(2) => \position_reg[4]_i_1_n_1\,
+      CO(1) => \position_reg[4]_i_1_n_2\,
+      CO(0) => \position_reg[4]_i_1_n_3\,
+      CYINIT => '0',
+      DI(3 downto 0) => B"0000",
+      O(3) => \position_reg[4]_i_1_n_4\,
+      O(2) => \position_reg[4]_i_1_n_5\,
+      O(1) => \position_reg[4]_i_1_n_6\,
+      O(0) => \position_reg[4]_i_1_n_7\,
+      S(3 downto 0) => position_reg(7 downto 4)
+    );
+\position_reg[5]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => clk,
+      CE => '1',
+      D => \position_reg[4]_i_1_n_6\,
+      Q => position_reg(5),
+      R => \position0_carry__0_n_3\
+    );
+\position_reg[6]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => clk,
+      CE => '1',
+      D => \position_reg[4]_i_1_n_5\,
+      Q => position_reg(6),
+      R => \position0_carry__0_n_3\
+    );
+\position_reg[7]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => clk,
+      CE => '1',
+      D => \position_reg[4]_i_1_n_4\,
+      Q => position_reg(7),
+      R => \position0_carry__0_n_3\
+    );
+\position_reg[8]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => clk,
+      CE => '1',
+      D => \position_reg[8]_i_1_n_7\,
+      Q => position_reg(8),
+      R => \position0_carry__0_n_3\
+    );
+\position_reg[8]_i_1\: unisim.vcomponents.CARRY4
+     port map (
+      CI => \position_reg[4]_i_1_n_0\,
+      CO(3) => \position_reg[8]_i_1_n_0\,
+      CO(2) => \position_reg[8]_i_1_n_1\,
+      CO(1) => \position_reg[8]_i_1_n_2\,
+      CO(0) => \position_reg[8]_i_1_n_3\,
+      CYINIT => '0',
+      DI(3 downto 0) => B"0000",
+      O(3) => \position_reg[8]_i_1_n_4\,
+      O(2) => \position_reg[8]_i_1_n_5\,
+      O(1) => \position_reg[8]_i_1_n_6\,
+      O(0) => \position_reg[8]_i_1_n_7\,
+      S(3) => \position_reg__0\(11),
+      S(2 downto 0) => position_reg(10 downto 8)
+    );
+\position_reg[9]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => clk,
+      CE => '1',
+      D => \position_reg[8]_i_1_n_6\,
+      Q => position_reg(9),
+      R => \position0_carry__0_n_3\
+    );
+end STRUCTURE;
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+library UNISIM;
+use UNISIM.VCOMPONENTS.ALL;
+entity median5x5_0_median5x5 is
+  port (
+    Q : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    pixel_out : out STD_LOGIC_VECTOR ( 0 to 0 );
+    clk : in STD_LOGIC;
+    hsync_in : in STD_LOGIC;
+    vsync_in : in STD_LOGIC;
+    D : in STD_LOGIC_VECTOR ( 1 downto 0 )
+  );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of median5x5_0_median5x5 : entity is "median5x5";
+end median5x5_0_median5x5;
+
+architecture STRUCTURE of median5x5_0_median5x5 is
+  signal \D11_reg_n_0_[0]\ : STD_LOGIC;
+  signal \D11_reg_n_0_[1]\ : STD_LOGIC;
+  signal \D11_reg_n_0_[2]\ : STD_LOGIC;
+  signal \D12_reg_n_0_[2]\ : STD_LOGIC;
+  signal \D14_reg[0]_srl3_n_0\ : STD_LOGIC;
+  signal \D14_reg[1]_srl3_n_0\ : STD_LOGIC;
+  signal \D15_reg_n_0_[0]\ : STD_LOGIC;
+  signal \D15_reg_n_0_[1]\ : STD_LOGIC;
+  signal \D21_reg_n_0_[0]\ : STD_LOGIC;
+  signal \D21_reg_n_0_[1]\ : STD_LOGIC;
+  signal \D24_reg[0]_srl3_n_0\ : STD_LOGIC;
+  signal \D24_reg[1]_srl3_n_0\ : STD_LOGIC;
+  signal \D25_reg_n_0_[0]\ : STD_LOGIC;
+  signal \D25_reg_n_0_[1]\ : STD_LOGIC;
+  signal \D31_reg_n_0_[0]\ : STD_LOGIC;
+  signal \D31_reg_n_0_[1]\ : STD_LOGIC;
+  signal \D32_reg_n_0_[0]\ : STD_LOGIC;
+  signal \D32_reg_n_0_[1]\ : STD_LOGIC;
+  signal \D33_reg_n_0_[0]\ : STD_LOGIC;
+  signal \D33_reg_n_0_[1]\ : STD_LOGIC;
+  signal \D33_reg_n_0_[2]\ : STD_LOGIC;
+  signal \D34_reg_n_0_[0]\ : STD_LOGIC;
+  signal \D34_reg_n_0_[1]\ : STD_LOGIC;
+  signal \D35_reg_n_0_[0]\ : STD_LOGIC;
+  signal \D35_reg_n_0_[1]\ : STD_LOGIC;
+  signal \D41_reg_n_0_[0]\ : STD_LOGIC;
+  signal \D41_reg_n_0_[1]\ : STD_LOGIC;
+  signal \D44_reg[0]_srl3_n_0\ : STD_LOGIC;
+  signal \D44_reg[1]_srl3_n_0\ : STD_LOGIC;
+  signal \D45_reg_n_0_[0]\ : STD_LOGIC;
+  signal \D45_reg_n_0_[1]\ : STD_LOGIC;
+  signal \D52_reg_n_0_[3]\ : STD_LOGIC;
+  signal cpix : STD_LOGIC_VECTOR ( 3 to 3 );
+  signal dout : STD_LOGIC_VECTOR ( 15 downto 2 );
+  signal p_0_in0_in : STD_LOGIC;
+  signal p_0_in10_in : STD_LOGIC;
+  signal p_0_in11_in : STD_LOGIC;
+  signal p_0_in13_in : STD_LOGIC;
+  signal p_0_in14_in : STD_LOGIC;
+  signal p_0_in15_in : STD_LOGIC;
+  signal p_0_in16_in : STD_LOGIC;
+  signal p_0_in18_in : STD_LOGIC;
+  signal p_0_in19_in : STD_LOGIC;
+  signal p_0_in1_in : STD_LOGIC;
+  signal p_0_in20_in : STD_LOGIC;
+  signal p_0_in21_in : STD_LOGIC;
+  signal p_0_in2_in : STD_LOGIC;
+  signal p_0_in3_in : STD_LOGIC;
+  signal p_0_in4_in : STD_LOGIC;
+  signal p_0_in5_in : STD_LOGIC;
+  signal p_0_in6_in : STD_LOGIC;
+  signal p_0_in8_in : STD_LOGIC;
+  signal p_0_in9_in : STD_LOGIC;
+  signal p_10_in : STD_LOGIC;
+  signal p_11_in : STD_LOGIC;
+  signal p_12_in : STD_LOGIC;
+  signal p_13_in : STD_LOGIC;
+  signal p_14_in : STD_LOGIC;
+  signal p_15_in : STD_LOGIC;
+  signal p_16_in : STD_LOGIC;
+  signal p_17_in : STD_LOGIC;
+  signal p_18_in : STD_LOGIC;
+  signal p_19_in : STD_LOGIC;
+  signal p_1_in : STD_LOGIC;
+  signal p_1_in12_in : STD_LOGIC;
+  signal p_1_in17_in : STD_LOGIC;
+  signal p_1_in22_in : STD_LOGIC;
+  signal p_1_in7_in : STD_LOGIC;
+  signal p_20_in : STD_LOGIC;
+  signal p_21_in : STD_LOGIC;
+  signal p_22_in : STD_LOGIC;
+  signal p_23_in : STD_LOGIC;
+  signal p_2_in : STD_LOGIC;
+  signal p_3_in : STD_LOGIC;
+  signal p_4_in : STD_LOGIC;
+  signal p_5_in : STD_LOGIC;
+  signal p_6_in : STD_LOGIC;
+  signal p_7_in : STD_LOGIC;
+  signal p_8_in : STD_LOGIC;
+  signal p_9_in : STD_LOGIC;
+  signal suma : STD_LOGIC_VECTOR ( 4 downto 0 );
+  signal \suma[0]_i_1_n_0\ : STD_LOGIC;
+  signal \suma[0]_i_2_n_0\ : STD_LOGIC;
+  signal \suma[0]_i_3_n_0\ : STD_LOGIC;
+  signal \suma[0]_i_4_n_0\ : STD_LOGIC;
+  signal \suma[0]_i_5_n_0\ : STD_LOGIC;
+  signal \suma[0]_i_6_n_0\ : STD_LOGIC;
+  signal \suma[1]_i_1_n_0\ : STD_LOGIC;
+  signal \suma[1]_i_2_n_0\ : STD_LOGIC;
+  signal \suma[1]_i_3_n_0\ : STD_LOGIC;
+  signal \suma[1]_i_4_n_0\ : STD_LOGIC;
+  signal \suma[1]_i_5_n_0\ : STD_LOGIC;
+  signal \suma[2]_i_1_n_0\ : STD_LOGIC;
+  signal \suma[2]_i_2_n_0\ : STD_LOGIC;
+  signal \suma[2]_i_3_n_0\ : STD_LOGIC;
+  signal \suma[2]_i_4_n_0\ : STD_LOGIC;
+  signal \suma[2]_i_5_n_0\ : STD_LOGIC;
+  signal \suma[2]_i_6_n_0\ : STD_LOGIC;
+  signal \suma[3]_i_1_n_0\ : STD_LOGIC;
+  signal \suma[4]_i_10_n_0\ : STD_LOGIC;
+  signal \suma[4]_i_11_n_0\ : STD_LOGIC;
+  signal \suma[4]_i_12_n_0\ : STD_LOGIC;
+  signal \suma[4]_i_1_n_0\ : STD_LOGIC;
+  signal \suma[4]_i_2_n_0\ : STD_LOGIC;
+  signal \suma[4]_i_3_n_0\ : STD_LOGIC;
+  signal \suma[4]_i_4_n_0\ : STD_LOGIC;
+  signal \suma[4]_i_5_n_0\ : STD_LOGIC;
+  signal \suma[4]_i_6_n_0\ : STD_LOGIC;
+  signal \suma[4]_i_7_n_0\ : STD_LOGIC;
+  signal \suma[4]_i_8_n_0\ : STD_LOGIC;
+  signal \suma[4]_i_9_n_0\ : STD_LOGIC;
+  signal \val[3]_i_2_n_0\ : STD_LOGIC;
+  signal \val[3]_i_3_n_0\ : STD_LOGIC;
+  signal \val[3]_i_4_n_0\ : STD_LOGIC;
+  signal \val[3]_i_5_n_0\ : STD_LOGIC;
+  attribute srl_bus_name : string;
+  attribute srl_bus_name of \D14_reg[0]_srl3\ : label is "\inst/D14_reg ";
+  attribute srl_name : string;
+  attribute srl_name of \D14_reg[0]_srl3\ : label is "\inst/D14_reg[0]_srl3 ";
+  attribute srl_bus_name of \D14_reg[1]_srl3\ : label is "\inst/D14_reg ";
+  attribute srl_name of \D14_reg[1]_srl3\ : label is "\inst/D14_reg[1]_srl3 ";
+  attribute srl_bus_name of \D24_reg[0]_srl3\ : label is "\inst/D24_reg ";
+  attribute srl_name of \D24_reg[0]_srl3\ : label is "\inst/D24_reg[0]_srl3 ";
+  attribute srl_bus_name of \D24_reg[1]_srl3\ : label is "\inst/D24_reg ";
+  attribute srl_name of \D24_reg[1]_srl3\ : label is "\inst/D24_reg[1]_srl3 ";
+  attribute srl_bus_name of \D44_reg[0]_srl3\ : label is "\inst/D44_reg ";
+  attribute srl_name of \D44_reg[0]_srl3\ : label is "\inst/D44_reg[0]_srl3 ";
+  attribute srl_bus_name of \D44_reg[1]_srl3\ : label is "\inst/D44_reg ";
+  attribute srl_name of \D44_reg[1]_srl3\ : label is "\inst/D44_reg[1]_srl3 ";
+  attribute SOFT_HLUTNM : string;
+  attribute SOFT_HLUTNM of \suma[0]_i_1\ : label is "soft_lutpair0";
+  attribute SOFT_HLUTNM of \suma[1]_i_1\ : label is "soft_lutpair7";
+  attribute SOFT_HLUTNM of \suma[1]_i_3\ : label is "soft_lutpair6";
+  attribute SOFT_HLUTNM of \suma[1]_i_4\ : label is "soft_lutpair5";
+  attribute SOFT_HLUTNM of \suma[1]_i_5\ : label is "soft_lutpair0";
+  attribute SOFT_HLUTNM of \suma[2]_i_3\ : label is "soft_lutpair1";
+  attribute SOFT_HLUTNM of \suma[2]_i_4\ : label is "soft_lutpair4";
+  attribute SOFT_HLUTNM of \suma[2]_i_5\ : label is "soft_lutpair2";
+  attribute SOFT_HLUTNM of \suma[2]_i_6\ : label is "soft_lutpair3";
+  attribute SOFT_HLUTNM of \suma[4]_i_10\ : label is "soft_lutpair3";
+  attribute SOFT_HLUTNM of \suma[4]_i_11\ : label is "soft_lutpair2";
+  attribute SOFT_HLUTNM of \suma[4]_i_12\ : label is "soft_lutpair4";
+  attribute SOFT_HLUTNM of \suma[4]_i_2\ : label is "soft_lutpair1";
+  attribute SOFT_HLUTNM of \suma[4]_i_4\ : label is "soft_lutpair6";
+  attribute SOFT_HLUTNM of \suma[4]_i_5\ : label is "soft_lutpair5";
+  attribute SOFT_HLUTNM of \suma[4]_i_7\ : label is "soft_lutpair7";
+begin
+\D11_reg[0]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => vsync_in,
+      Q => \D11_reg_n_0_[0]\,
+      R => '0'
+    );
+\D11_reg[1]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => hsync_in,
+      Q => \D11_reg_n_0_[1]\,
+      R => '0'
+    );
+\D11_reg[2]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => D(0),
+      Q => \D11_reg_n_0_[2]\,
+      R => '0'
+    );
+\D11_reg[3]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => D(1),
+      Q => p_1_in22_in,
+      R => '0'
+    );
+\D12_reg[2]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => \D11_reg_n_0_[2]\,
+      Q => \D12_reg_n_0_[2]\,
+      R => '0'
+    );
+\D12_reg[3]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => p_1_in22_in,
+      Q => p_0_in18_in,
+      R => '0'
+    );
+\D13_reg[2]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => \D12_reg_n_0_[2]\,
+      Q => p_2_in,
+      R => '0'
+    );
+\D13_reg[3]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => p_0_in18_in,
+      Q => p_0_in19_in,
+      R => '0'
+    );
+\D14_reg[0]_srl3\: unisim.vcomponents.SRL16E
+     port map (
+      A0 => '0',
+      A1 => '1',
+      A2 => '0',
+      A3 => '0',
+      CE => '1',
+      CLK => clk,
+      D => \D11_reg_n_0_[0]\,
+      Q => \D14_reg[0]_srl3_n_0\
+    );
+\D14_reg[1]_srl3\: unisim.vcomponents.SRL16E
+     port map (
+      A0 => '0',
+      A1 => '1',
+      A2 => '0',
+      A3 => '0',
+      CE => '1',
+      CLK => clk,
+      D => \D11_reg_n_0_[1]\,
+      Q => \D14_reg[1]_srl3_n_0\
+    );
+\D14_reg[2]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => p_2_in,
+      Q => p_3_in,
+      R => '0'
+    );
+\D14_reg[3]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => p_0_in19_in,
+      Q => p_0_in20_in,
+      R => '0'
+    );
+\D15_reg[0]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => \D14_reg[0]_srl3_n_0\,
+      Q => \D15_reg_n_0_[0]\,
+      R => '0'
+    );
+\D15_reg[1]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => \D14_reg[1]_srl3_n_0\,
+      Q => \D15_reg_n_0_[1]\,
+      R => '0'
+    );
+\D15_reg[2]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => p_3_in,
+      Q => p_4_in,
+      R => '0'
+    );
+\D15_reg[3]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => p_0_in20_in,
+      Q => p_0_in21_in,
+      R => '0'
+    );
+\D21_reg[0]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => dout(12),
+      Q => \D21_reg_n_0_[0]\,
+      R => '0'
+    );
+\D21_reg[1]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => dout(13),
+      Q => \D21_reg_n_0_[1]\,
+      R => '0'
+    );
+\D21_reg[2]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => dout(14),
+      Q => p_5_in,
+      R => '0'
+    );
+\D21_reg[3]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => dout(15),
+      Q => p_1_in17_in,
+      R => '0'
+    );
+\D22_reg[2]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => p_5_in,
+      Q => p_6_in,
+      R => '0'
+    );
+\D22_reg[3]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => p_1_in17_in,
+      Q => p_0_in13_in,
+      R => '0'
+    );
+\D23_reg[2]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => p_6_in,
+      Q => p_7_in,
+      R => '0'
+    );
+\D23_reg[3]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => p_0_in13_in,
+      Q => p_0_in14_in,
+      R => '0'
+    );
+\D24_reg[0]_srl3\: unisim.vcomponents.SRL16E
+     port map (
+      A0 => '0',
+      A1 => '1',
+      A2 => '0',
+      A3 => '0',
+      CE => '1',
+      CLK => clk,
+      D => \D21_reg_n_0_[0]\,
+      Q => \D24_reg[0]_srl3_n_0\
+    );
+\D24_reg[1]_srl3\: unisim.vcomponents.SRL16E
+     port map (
+      A0 => '0',
+      A1 => '1',
+      A2 => '0',
+      A3 => '0',
+      CE => '1',
+      CLK => clk,
+      D => \D21_reg_n_0_[1]\,
+      Q => \D24_reg[1]_srl3_n_0\
+    );
+\D24_reg[2]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => p_7_in,
+      Q => p_8_in,
+      R => '0'
+    );
+\D24_reg[3]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => p_0_in14_in,
+      Q => p_0_in15_in,
+      R => '0'
+    );
+\D25_reg[0]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => \D24_reg[0]_srl3_n_0\,
+      Q => \D25_reg_n_0_[0]\,
+      R => '0'
+    );
+\D25_reg[1]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => \D24_reg[1]_srl3_n_0\,
+      Q => \D25_reg_n_0_[1]\,
+      R => '0'
+    );
+\D25_reg[2]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => p_8_in,
+      Q => p_9_in,
+      R => '0'
+    );
+\D25_reg[3]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => p_0_in15_in,
+      Q => p_0_in16_in,
+      R => '0'
+    );
+\D31_reg[0]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => dout(8),
+      Q => \D31_reg_n_0_[0]\,
+      R => '0'
+    );
+\D31_reg[1]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => dout(9),
+      Q => \D31_reg_n_0_[1]\,
+      R => '0'
+    );
+\D31_reg[2]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => dout(10),
+      Q => p_10_in,
+      R => '0'
+    );
+\D31_reg[3]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => dout(11),
+      Q => p_1_in12_in,
+      R => '0'
+    );
+\D32_reg[0]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => \D31_reg_n_0_[0]\,
+      Q => \D32_reg_n_0_[0]\,
+      R => '0'
+    );
+\D32_reg[1]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => \D31_reg_n_0_[1]\,
+      Q => \D32_reg_n_0_[1]\,
+      R => '0'
+    );
+\D32_reg[2]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => p_10_in,
+      Q => p_11_in,
+      R => '0'
+    );
+\D32_reg[3]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => p_1_in12_in,
+      Q => p_0_in8_in,
+      R => '0'
+    );
+\D33_reg[0]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => \D32_reg_n_0_[0]\,
+      Q => \D33_reg_n_0_[0]\,
+      R => '0'
+    );
+\D33_reg[1]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => \D32_reg_n_0_[1]\,
+      Q => \D33_reg_n_0_[1]\,
+      R => '0'
+    );
+\D33_reg[2]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => p_11_in,
+      Q => \D33_reg_n_0_[2]\,
+      R => '0'
+    );
+\D33_reg[3]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => p_0_in8_in,
+      Q => p_0_in9_in,
+      R => '0'
+    );
+\D34_reg[0]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => \D33_reg_n_0_[0]\,
+      Q => \D34_reg_n_0_[0]\,
+      R => '0'
+    );
+\D34_reg[1]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => \D33_reg_n_0_[1]\,
+      Q => \D34_reg_n_0_[1]\,
+      R => '0'
+    );
+\D34_reg[2]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => \D33_reg_n_0_[2]\,
+      Q => p_12_in,
+      R => '0'
+    );
+\D34_reg[3]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => p_0_in9_in,
+      Q => p_0_in10_in,
+      R => '0'
+    );
+\D35_reg[0]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => \D34_reg_n_0_[0]\,
+      Q => \D35_reg_n_0_[0]\,
+      R => '0'
+    );
+\D35_reg[1]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => \D34_reg_n_0_[1]\,
+      Q => \D35_reg_n_0_[1]\,
+      R => '0'
+    );
+\D35_reg[2]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => p_12_in,
+      Q => p_13_in,
+      R => '0'
+    );
+\D35_reg[3]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => p_0_in10_in,
+      Q => p_0_in11_in,
+      R => '0'
+    );
+\D41_reg[0]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => dout(4),
+      Q => \D41_reg_n_0_[0]\,
+      R => '0'
+    );
+\D41_reg[1]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => dout(5),
+      Q => \D41_reg_n_0_[1]\,
+      R => '0'
+    );
+\D41_reg[2]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => dout(6),
+      Q => p_14_in,
+      R => '0'
+    );
+\D41_reg[3]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => dout(7),
+      Q => p_1_in7_in,
+      R => '0'
+    );
+\D42_reg[2]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => p_14_in,
+      Q => p_15_in,
+      R => '0'
+    );
+\D42_reg[3]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => p_1_in7_in,
+      Q => p_0_in3_in,
+      R => '0'
+    );
+\D43_reg[2]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => p_15_in,
+      Q => p_16_in,
+      R => '0'
+    );
+\D43_reg[3]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => p_0_in3_in,
+      Q => p_0_in4_in,
+      R => '0'
+    );
+\D44_reg[0]_srl3\: unisim.vcomponents.SRL16E
+     port map (
+      A0 => '0',
+      A1 => '1',
+      A2 => '0',
+      A3 => '0',
+      CE => '1',
+      CLK => clk,
+      D => \D41_reg_n_0_[0]\,
+      Q => \D44_reg[0]_srl3_n_0\
+    );
+\D44_reg[1]_srl3\: unisim.vcomponents.SRL16E
+     port map (
+      A0 => '0',
+      A1 => '1',
+      A2 => '0',
+      A3 => '0',
+      CE => '1',
+      CLK => clk,
+      D => \D41_reg_n_0_[1]\,
+      Q => \D44_reg[1]_srl3_n_0\
+    );
+\D44_reg[2]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => p_16_in,
+      Q => p_17_in,
+      R => '0'
+    );
+\D44_reg[3]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => p_0_in4_in,
+      Q => p_0_in5_in,
+      R => '0'
+    );
+\D45_reg[0]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => \D44_reg[0]_srl3_n_0\,
+      Q => \D45_reg_n_0_[0]\,
+      R => '0'
+    );
+\D45_reg[1]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => \D44_reg[1]_srl3_n_0\,
+      Q => \D45_reg_n_0_[1]\,
+      R => '0'
+    );
+\D45_reg[2]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => p_17_in,
+      Q => p_18_in,
+      R => '0'
+    );
+\D45_reg[3]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => p_0_in5_in,
+      Q => p_0_in6_in,
+      R => '0'
+    );
+\D51_reg[2]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => dout(2),
+      Q => p_19_in,
+      R => '0'
+    );
+\D51_reg[3]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => dout(3),
+      Q => p_1_in,
+      R => '0'
+    );
+\D52_reg[2]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => p_19_in,
+      Q => p_20_in,
+      R => '0'
+    );
+\D52_reg[3]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => p_1_in,
+      Q => \D52_reg_n_0_[3]\,
+      R => '0'
+    );
+\D53_reg[2]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => p_20_in,
+      Q => p_21_in,
+      R => '0'
+    );
+\D53_reg[3]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => \D52_reg_n_0_[3]\,
+      Q => p_0_in0_in,
+      R => '0'
+    );
+\D54_reg[2]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => p_21_in,
+      Q => p_22_in,
+      R => '0'
+    );
+\D54_reg[3]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => p_0_in0_in,
+      Q => p_0_in1_in,
+      R => '0'
+    );
+\D55_reg[2]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => p_22_in,
+      Q => p_23_in,
+      R => '0'
+    );
+\D55_reg[3]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => p_0_in1_in,
+      Q => p_0_in2_in,
+      R => '0'
+    );
+del: entity work.median5x5_0_delay_line
+     port map (
+      D(3) => cpix(3),
+      D(2) => \D33_reg_n_0_[2]\,
+      D(1) => \D33_reg_n_0_[1]\,
+      D(0) => \D33_reg_n_0_[0]\,
+      Q(4 downto 0) => suma(4 downto 0),
+      clk => clk,
+      pixel_out(0) => pixel_out(0),
+      \val_reg[2]\(2 downto 0) => Q(2 downto 0)
+    );
+long_line: entity work.median5x5_0_delayLinieBRAM_WP
+     port map (
+      Q(1) => p_0_in21_in,
+      Q(0) => p_4_in,
+      clk => clk,
+      dina(13) => \D15_reg_n_0_[1]\,
+      dina(12) => \D15_reg_n_0_[0]\,
+      dina(11) => p_0_in16_in,
+      dina(10) => p_9_in,
+      dina(9) => \D25_reg_n_0_[1]\,
+      dina(8) => \D25_reg_n_0_[0]\,
+      dina(7) => p_0_in11_in,
+      dina(6) => p_13_in,
+      dina(5) => \D35_reg_n_0_[1]\,
+      dina(4) => \D35_reg_n_0_[0]\,
+      dina(3) => p_0_in6_in,
+      dina(2) => p_18_in,
+      dina(1) => \D45_reg_n_0_[1]\,
+      dina(0) => \D45_reg_n_0_[0]\,
+      douta(13 downto 0) => dout(15 downto 2)
+    );
+\suma[0]_i_1\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"69969669"
+    )
+        port map (
+      I0 => \suma[0]_i_2_n_0\,
+      I1 => \suma[0]_i_3_n_0\,
+      I2 => \suma[0]_i_4_n_0\,
+      I3 => \suma[0]_i_5_n_0\,
+      I4 => \suma[0]_i_6_n_0\,
+      O => \suma[0]_i_1_n_0\
+    );
+\suma[0]_i_2\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"96696996"
+    )
+        port map (
+      I0 => p_0_in3_in,
+      I1 => p_0_in4_in,
+      I2 => p_0_in5_in,
+      I3 => p_1_in7_in,
+      I4 => p_0_in6_in,
+      O => \suma[0]_i_2_n_0\
+    );
+\suma[0]_i_3\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"96696996"
+    )
+        port map (
+      I0 => p_1_in22_in,
+      I1 => p_0_in21_in,
+      I2 => p_0_in19_in,
+      I3 => p_0_in20_in,
+      I4 => p_0_in18_in,
+      O => \suma[0]_i_3_n_0\
+    );
+\suma[0]_i_4\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"96696996"
+    )
+        port map (
+      I0 => p_1_in,
+      I1 => p_0_in2_in,
+      I2 => p_0_in0_in,
+      I3 => p_0_in1_in,
+      I4 => \D52_reg_n_0_[3]\,
+      O => \suma[0]_i_4_n_0\
+    );
+\suma[0]_i_5\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"69969669"
+    )
+        port map (
+      I0 => p_0_in16_in,
+      I1 => p_1_in17_in,
+      I2 => p_0_in13_in,
+      I3 => p_0_in14_in,
+      I4 => p_0_in15_in,
+      O => \suma[0]_i_5_n_0\
+    );
+\suma[0]_i_6\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"96696996"
+    )
+        port map (
+      I0 => p_1_in12_in,
+      I1 => p_0_in11_in,
+      I2 => p_0_in8_in,
+      I3 => p_0_in9_in,
+      I4 => p_0_in10_in,
+      O => \suma[0]_i_6_n_0\
+    );
+\suma[1]_i_1\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"9669"
+    )
+        port map (
+      I0 => \suma[1]_i_2_n_0\,
+      I1 => \suma[1]_i_3_n_0\,
+      I2 => \suma[1]_i_4_n_0\,
+      I3 => \suma[1]_i_5_n_0\,
+      O => \suma[1]_i_1_n_0\
+    );
+\suma[1]_i_2\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"17E8E817E81717E8"
+    )
+        port map (
+      I0 => \suma[0]_i_3_n_0\,
+      I1 => \suma[0]_i_4_n_0\,
+      I2 => \suma[0]_i_2_n_0\,
+      I3 => \suma[2]_i_6_n_0\,
+      I4 => \suma[2]_i_5_n_0\,
+      I5 => \suma[2]_i_4_n_0\,
+      O => \suma[1]_i_2_n_0\
+    );
+\suma[1]_i_3\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"177E7EE8"
+    )
+        port map (
+      I0 => p_0_in16_in,
+      I1 => p_1_in17_in,
+      I2 => p_0_in13_in,
+      I3 => p_0_in14_in,
+      I4 => p_0_in15_in,
+      O => \suma[1]_i_3_n_0\
+    );
+\suma[1]_i_4\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"177E7EE8"
+    )
+        port map (
+      I0 => p_0_in11_in,
+      I1 => p_1_in12_in,
+      I2 => p_0_in8_in,
+      I3 => p_0_in9_in,
+      I4 => p_0_in10_in,
+      O => \suma[1]_i_4_n_0\
+    );
+\suma[1]_i_5\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"96FF0096"
+    )
+        port map (
+      I0 => \suma[0]_i_2_n_0\,
+      I1 => \suma[0]_i_3_n_0\,
+      I2 => \suma[0]_i_4_n_0\,
+      I3 => \suma[0]_i_5_n_0\,
+      I4 => \suma[0]_i_6_n_0\,
+      O => \suma[1]_i_5_n_0\
+    );
+\suma[2]_i_1\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"6996966996696996"
+    )
+        port map (
+      I0 => \suma[2]_i_2_n_0\,
+      I1 => \suma[2]_i_3_n_0\,
+      I2 => \suma[4]_i_5_n_0\,
+      I3 => \suma[4]_i_4_n_0\,
+      I4 => \suma[4]_i_6_n_0\,
+      I5 => \suma[4]_i_7_n_0\,
+      O => \suma[2]_i_1_n_0\
+    );
+\suma[2]_i_2\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"FF17E8FFE8FF00E8"
+    )
+        port map (
+      I0 => \suma[0]_i_2_n_0\,
+      I1 => \suma[0]_i_4_n_0\,
+      I2 => \suma[0]_i_3_n_0\,
+      I3 => \suma[2]_i_4_n_0\,
+      I4 => \suma[2]_i_5_n_0\,
+      I5 => \suma[2]_i_6_n_0\,
+      O => \suma[2]_i_2_n_0\
+    );
+\suma[2]_i_3\: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"96"
+    )
+        port map (
+      I0 => \suma[4]_i_11_n_0\,
+      I1 => \suma[4]_i_12_n_0\,
+      I2 => \suma[4]_i_10_n_0\,
+      O => \suma[2]_i_3_n_0\
+    );
+\suma[2]_i_4\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"E8818117"
+    )
+        port map (
+      I0 => p_0_in6_in,
+      I1 => p_1_in7_in,
+      I2 => p_0_in3_in,
+      I3 => p_0_in4_in,
+      I4 => p_0_in5_in,
+      O => \suma[2]_i_4_n_0\
+    );
+\suma[2]_i_5\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"177E7EE8"
+    )
+        port map (
+      I0 => p_0_in2_in,
+      I1 => p_1_in,
+      I2 => p_0_in0_in,
+      I3 => p_0_in1_in,
+      I4 => \D52_reg_n_0_[3]\,
+      O => \suma[2]_i_5_n_0\
+    );
+\suma[2]_i_6\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"177E7EE8"
+    )
+        port map (
+      I0 => p_0_in21_in,
+      I1 => p_1_in22_in,
+      I2 => p_0_in18_in,
+      I3 => p_0_in20_in,
+      I4 => p_0_in19_in,
+      O => \suma[2]_i_6_n_0\
+    );
+\suma[3]_i_1\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"1E7878E178E1E187"
+    )
+        port map (
+      I0 => \suma[4]_i_7_n_0\,
+      I1 => \suma[4]_i_6_n_0\,
+      I2 => \suma[4]_i_2_n_0\,
+      I3 => \suma[4]_i_3_n_0\,
+      I4 => \suma[4]_i_4_n_0\,
+      I5 => \suma[4]_i_5_n_0\,
+      O => \suma[3]_i_1_n_0\
+    );
+\suma[4]_i_1\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"FDD5D554D5545440"
+    )
+        port map (
+      I0 => \suma[4]_i_2_n_0\,
+      I1 => \suma[4]_i_3_n_0\,
+      I2 => \suma[4]_i_4_n_0\,
+      I3 => \suma[4]_i_5_n_0\,
+      I4 => \suma[4]_i_6_n_0\,
+      I5 => \suma[4]_i_7_n_0\,
+      O => \suma[4]_i_1_n_0\
+    );
+\suma[4]_i_10\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"177F7FFF"
+    )
+        port map (
+      I0 => p_1_in22_in,
+      I1 => p_0_in21_in,
+      I2 => p_0_in19_in,
+      I3 => p_0_in20_in,
+      I4 => p_0_in18_in,
+      O => \suma[4]_i_10_n_0\
+    );
+\suma[4]_i_11\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"177F7FFF"
+    )
+        port map (
+      I0 => p_1_in,
+      I1 => p_0_in2_in,
+      I2 => p_0_in0_in,
+      I3 => p_0_in1_in,
+      I4 => \D52_reg_n_0_[3]\,
+      O => \suma[4]_i_11_n_0\
+    );
+\suma[4]_i_12\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"E8808000"
+    )
+        port map (
+      I0 => p_0_in6_in,
+      I1 => p_1_in7_in,
+      I2 => p_0_in3_in,
+      I3 => p_0_in4_in,
+      I4 => p_0_in5_in,
+      O => \suma[4]_i_12_n_0\
+    );
+\suma[4]_i_2\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"10007110"
+    )
+        port map (
+      I0 => \suma[4]_i_8_n_0\,
+      I1 => \suma[4]_i_9_n_0\,
+      I2 => \suma[4]_i_10_n_0\,
+      I3 => \suma[4]_i_11_n_0\,
+      I4 => \suma[4]_i_12_n_0\,
+      O => \suma[4]_i_2_n_0\
+    );
+\suma[4]_i_3\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"6"
+    )
+        port map (
+      I0 => \suma[2]_i_3_n_0\,
+      I1 => \suma[2]_i_2_n_0\,
+      O => \suma[4]_i_3_n_0\
+    );
+\suma[4]_i_4\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"E8808000"
+    )
+        port map (
+      I0 => p_0_in16_in,
+      I1 => p_1_in17_in,
+      I2 => p_0_in13_in,
+      I3 => p_0_in14_in,
+      I4 => p_0_in15_in,
+      O => \suma[4]_i_4_n_0\
+    );
+\suma[4]_i_5\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"E8808000"
+    )
+        port map (
+      I0 => p_0_in11_in,
+      I1 => p_1_in12_in,
+      I2 => p_0_in8_in,
+      I3 => p_0_in9_in,
+      I4 => p_0_in10_in,
+      O => \suma[4]_i_5_n_0\
+    );
+\suma[4]_i_6\: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"8E"
+    )
+        port map (
+      I0 => \suma[1]_i_4_n_0\,
+      I1 => \suma[1]_i_3_n_0\,
+      I2 => \suma[1]_i_2_n_0\,
+      O => \suma[4]_i_6_n_0\
+    );
+\suma[4]_i_7\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"2882"
+    )
+        port map (
+      I0 => \suma[1]_i_5_n_0\,
+      I1 => \suma[1]_i_4_n_0\,
+      I2 => \suma[1]_i_3_n_0\,
+      I3 => \suma[1]_i_2_n_0\,
+      O => \suma[4]_i_7_n_0\
+    );
+\suma[4]_i_8\: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"8E"
+    )
+        port map (
+      I0 => \suma[2]_i_6_n_0\,
+      I1 => \suma[2]_i_5_n_0\,
+      I2 => \suma[2]_i_4_n_0\,
+      O => \suma[4]_i_8_n_0\
+    );
+\suma[4]_i_9\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"00E8E800E80000E8"
+    )
+        port map (
+      I0 => \suma[0]_i_3_n_0\,
+      I1 => \suma[0]_i_4_n_0\,
+      I2 => \suma[0]_i_2_n_0\,
+      I3 => \suma[2]_i_6_n_0\,
+      I4 => \suma[2]_i_5_n_0\,
+      I5 => \suma[2]_i_4_n_0\,
+      O => \suma[4]_i_9_n_0\
+    );
+\suma_reg[0]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => \suma[0]_i_1_n_0\,
+      Q => suma(0),
+      R => '0'
+    );
+\suma_reg[1]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => \suma[1]_i_1_n_0\,
+      Q => suma(1),
+      R => '0'
+    );
+\suma_reg[2]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => \suma[2]_i_1_n_0\,
+      Q => suma(2),
+      R => '0'
+    );
+\suma_reg[3]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => \suma[3]_i_1_n_0\,
+      Q => suma(3),
+      R => '0'
+    );
+\suma_reg[4]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => \suma[4]_i_1_n_0\,
+      Q => suma(4),
+      R => '0'
+    );
+\val[3]_i_1\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"80000000"
+    )
+        port map (
+      I0 => \val[3]_i_2_n_0\,
+      I1 => \val[3]_i_3_n_0\,
+      I2 => \val[3]_i_4_n_0\,
+      I3 => \D11_reg_n_0_[2]\,
+      I4 => \val[3]_i_5_n_0\,
+      O => cpix(3)
+    );
+\val[3]_i_2\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"8000000000000000"
+    )
+        port map (
+      I0 => p_21_in,
+      I1 => p_20_in,
+      I2 => p_23_in,
+      I3 => p_22_in,
+      I4 => p_18_in,
+      I5 => p_19_in,
+      O => \val[3]_i_2_n_0\
+    );
+\val[3]_i_3\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"8000000000000000"
+    )
+        port map (
+      I0 => p_4_in,
+      I1 => p_3_in,
+      I2 => p_6_in,
+      I3 => p_5_in,
+      I4 => \D12_reg_n_0_[2]\,
+      I5 => p_2_in,
+      O => \val[3]_i_3_n_0\
+    );
+\val[3]_i_4\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"8000000000000000"
+    )
+        port map (
+      I0 => p_10_in,
+      I1 => p_9_in,
+      I2 => \D33_reg_n_0_[2]\,
+      I3 => p_11_in,
+      I4 => p_7_in,
+      I5 => p_8_in,
+      O => \val[3]_i_4_n_0\
+    );
+\val[3]_i_5\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"8000000000000000"
+    )
+        port map (
+      I0 => p_15_in,
+      I1 => p_14_in,
+      I2 => p_17_in,
+      I3 => p_16_in,
+      I4 => p_12_in,
+      I5 => p_13_in,
+      O => \val[3]_i_5_n_0\
+    );
+end STRUCTURE;
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+library UNISIM;
+use UNISIM.VCOMPONENTS.ALL;
+entity median5x5_0 is
+  port (
+    clk : in STD_LOGIC;
+    de_in : in STD_LOGIC;
+    hsync_in : in STD_LOGIC;
+    vsync_in : in STD_LOGIC;
+    pixel_in : in STD_LOGIC_VECTOR ( 23 downto 0 );
+    de_out : out STD_LOGIC;
+    vsync_out : out STD_LOGIC;
+    hsync_out : out STD_LOGIC;
+    pixel_out : out STD_LOGIC_VECTOR ( 23 downto 0 )
+  );
+  attribute NotValidForBitStream : boolean;
+  attribute NotValidForBitStream of median5x5_0 : entity is true;
+  attribute CHECK_LICENSE_TYPE : string;
+  attribute CHECK_LICENSE_TYPE of median5x5_0 : entity is "median5x5_0,median5x5,{}";
+  attribute DowngradeIPIdentifiedWarnings : string;
+  attribute DowngradeIPIdentifiedWarnings of median5x5_0 : entity is "yes";
+  attribute IP_DEFINITION_SOURCE : string;
+  attribute IP_DEFINITION_SOURCE of median5x5_0 : entity is "package_project";
+  attribute X_CORE_INFO : string;
+  attribute X_CORE_INFO of median5x5_0 : entity is "median5x5,Vivado 2022.2";
+end median5x5_0;
+
+architecture STRUCTURE of median5x5_0 is
+  signal \^pixel_out\ : STD_LOGIC_VECTOR ( 23 to 23 );
+  attribute X_INTERFACE_INFO : string;
+  attribute X_INTERFACE_INFO of clk : signal is "xilinx.com:signal:clock:1.0 clk CLK";
+  attribute X_INTERFACE_PARAMETER : string;
+  attribute X_INTERFACE_PARAMETER of clk : signal is "XIL_INTERFACENAME clk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, INSERT_VIP 0";
+begin
+  pixel_out(23) <= \^pixel_out\(23);
+  pixel_out(22) <= \^pixel_out\(23);
+  pixel_out(21) <= \^pixel_out\(23);
+  pixel_out(20) <= \^pixel_out\(23);
+  pixel_out(19) <= \^pixel_out\(23);
+  pixel_out(18) <= \^pixel_out\(23);
+  pixel_out(17) <= \^pixel_out\(23);
+  pixel_out(16) <= \^pixel_out\(23);
+  pixel_out(15) <= \^pixel_out\(23);
+  pixel_out(14) <= \^pixel_out\(23);
+  pixel_out(13) <= \^pixel_out\(23);
+  pixel_out(12) <= \^pixel_out\(23);
+  pixel_out(11) <= \^pixel_out\(23);
+  pixel_out(10) <= \^pixel_out\(23);
+  pixel_out(9) <= \^pixel_out\(23);
+  pixel_out(8) <= \^pixel_out\(23);
+  pixel_out(7) <= \^pixel_out\(23);
+  pixel_out(6) <= \^pixel_out\(23);
+  pixel_out(5) <= \^pixel_out\(23);
+  pixel_out(4) <= \^pixel_out\(23);
+  pixel_out(3) <= \^pixel_out\(23);
+  pixel_out(2) <= \^pixel_out\(23);
+  pixel_out(1) <= \^pixel_out\(23);
+  pixel_out(0) <= \^pixel_out\(23);
+inst: entity work.median5x5_0_median5x5
+     port map (
+      D(1) => pixel_in(0),
+      D(0) => de_in,
+      Q(2) => de_out,
+      Q(1) => hsync_out,
+      Q(0) => vsync_out,
+      clk => clk,
+      hsync_in => hsync_in,
+      pixel_out(0) => \^pixel_out\(23),
+      vsync_in => vsync_in
+    );
+end STRUCTURE;

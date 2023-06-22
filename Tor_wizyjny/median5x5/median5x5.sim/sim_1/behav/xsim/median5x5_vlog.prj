@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../median5x5.gen/sources_1/ip/delayLineBRAM_1/sim/delayLineBRAM.v" \
+"../../../../median5x5.srcs/sources_1/imports/Desktop/delayLineBRAM_WP.v" \
+"../../../../../Projekty/project_2/project_2.srcs/sources_1/new/delay_line.v" \
+"../../../../../Projekty/project_2/project_2.srcs/sources_1/new/single_register.v" \
+"../../../../median5x5.srcs/sources_1/new/median5x5.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

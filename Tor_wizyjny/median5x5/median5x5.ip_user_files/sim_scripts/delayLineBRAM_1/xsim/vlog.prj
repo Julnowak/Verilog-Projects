@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../median5x5.gen/sources_1/ip/delayLineBRAM_1/sim/delayLineBRAM.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort
